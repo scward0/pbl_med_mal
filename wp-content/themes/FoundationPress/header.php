@@ -45,14 +45,14 @@
 					text-transform: uppercase;
 					/*font-weight: bold;*/
 				}
-				a[href="http://localhost/PBL_Medical_Malpractice/practice_area/catastrophic-patient-injuries/"], a[href="http://www.redirectdigital.com/"], a[href="http://localhost/PBL_Medical_Malpractice/practice_area/medication-errors/"], a[href="http://localhost/PBL_Medical_Malpractice/practice_area/surgical-errors/"], a[href="http://localhost/PBL_Medical_Malpractice/practice_area/hospital-misdiagnosis/"]{
+				a[href="http://198.58.102.147/pbl_med_mal/practice_area/catastrophic-patient-injuries/"], a[href="http://www.redirectdigital.com/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/medication-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/surgical-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/hospital-misdiagnosis/"]{
 					font-size: 80% !important;
 					font-weight: 300;
 				}
-				a[href="http://localhost/PBL_Medical_Malpractice/practice_area/catastrophic-patient-injuries/"]{
+				a[href="http://198.58.102.147/pbl_med_mal/practice_area/catastrophic-patient-injuries/"]{
 					margin-bottom: 20px;
 				}
-				a[href="http://localhost/PBL_Medical_Malpractice/about/"]{
+				a[href="http://198.58.102.147/pbl_med_mal/about/"]{
 					border-top: solid 5px #fcbc1e;
 					width: 60%;
 					margin-left: auto;
@@ -77,7 +77,7 @@
 					}
 				}
 				</style>
-				<li class="home"><a class="desk-logo" href="<?php bloginfo('url'); ?>"><img src="http://localhost/PBL_Medical_Malpractice/wp-content/uploads/2016/12/charles_thronson_logo.png" width="300" style="z-index: 5;"alt="<?php bloginfo('name'); ?>"/></a></li>
+				<li class="home"><a class="desk-logo" href="<?php bloginfo('url'); ?>"><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/charles_thronson_logo.png" width="300" style="z-index: 5;"alt="<?php bloginfo('name'); ?>"/></a></li>
 				<li><span id="schedule">Schedule a free consultation: 800-532-0021</span></li>
 				<i class="fa fa-bars fa-4x"  onclick="menu1.togglemenu(); return false"></i>
 			</ul>
