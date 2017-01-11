@@ -1,5 +1,5 @@
 <div class="container">
-  <div style="background: url('<?php the_field('hero'); ?>'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" >
+  <div style="background: url('<?php the_field('hero'); ?>'); height: 500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" >
     <?php get_header(); ?>
   </div>
 </div>
