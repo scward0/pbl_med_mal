@@ -20,10 +20,11 @@
       HANDLING MEDICAL MALPRACTICE CASES
     </p>
     <p class="text-center">
-      <a id="learn-more" class="button" href="#">LEARN MORE</a>
+      <a id="learn-more" class="button" href="http://redirectdigital.com/">LEARN MORE</a>
     </p>
   </div>
 </div>
+
 
 
 
