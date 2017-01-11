@@ -1,0 +1,165 @@
+div.fullscreenmenu {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	font-size: 10px; /* base front size. */
+	background: #D62595;
+	text-align: center;
+	overflow: auto;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease-in; /* set transition type and time */
+	transition: all 0.3s ease-in;
+}
+div.fullscreenmenu .navcontent {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+div.fullscreenmenu ul.nav-menu {
+	font-size: 3.5em;
+	font-family: 'Bitter', sans-serif;
+	list-style: none;
+	margin: 0;
+	margin-top: 1em;
+	padding: 0;
+}
+div.fullscreenmenu ul.nav-menu li {
+	border-bottom: 1px solid #eee;
+}
+div.fullscreenmenu ul.nav-menu li a {
+	text-decoration: none;
+	padding: 5px 0;
+	display: block;
+	color: white;
+}
+div.fullscreenmenu ul.nav-menu li a:hover {
+	color: lightyellow;
+}
+div.fullscreenmenu.top {
+	top: -100%;
+	left:0;
+}
+div.fullscreenmenu.left {
+	left: -100%;
+	top:0;
+}
+div.fullscreenmenu.bottom {
+	bottom: -100%;
+	left:0;
+}
+div.fullscreenmenu.right {
+	right: -100%;
+	top:0;
+}
+div.fullscreenmenu.open {
+	z-index: 9999;
+}
+div.fullscreenmenu.top.open {
+	top: 0;
+	z-index: 999;
+}
+div.fullscreenmenu.left.open {
+	left: 0;
+	z-index: 999;
+}
+div.fullscreenmenu.right.open {
+	right: 0;
+	z-index: 999;
+}
+div.fullscreenmenu.bottom.open {
+	bottom: 0;
+	z-index: 999;
+}
+/* ############# Animated Drawer icon CSS ############# */
+
+
+
+.animateddrawer {
+	font-size: 10px; /* Base font size. Adjust this value to modify size of drawer icon */
+	width: 3em;
+	height: 2.8em;
+	outline: none;
+	display: block;
+	position: relative;
+	background: white;
+	z-index: auto;
+}
+.animateddrawer:before, .animateddrawer:after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0.6em; /* height of top and bottom drawer line */
+	background: black;
+	border-radius: 2px;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in; /* set transition type and time */
+	transition: all 0.3s ease-in;
+}
+.animateddrawer:after {
+	top: auto;
+	bottom: 0;
+}
+.animateddrawer span {
+	width: 100%;
+	height: 0.6em; /* height of middle drawer line */
+	background: black;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.3em; /* set this to - half of middle drawer line height */
+	border-radius: 2px;
+	-ms-transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transition: all 0.3s ease-in 0.3s; /* set transition type and time */
+	transition: all 0.3s ease-in 0.3s;
+}
+/* .animateddrawer span::after {
+ content: '';
+ display: block;
+ width: 100%;
+ height: 0.6em; //height of middle drawer line /
+ background: black;
+ border-radius: 2px;
+ position: absolute;
+ -ms-transform-origin: 50% 50%;
+ -webkit-transform-origin: 50% 50%;
+ transform-origin: 50% 50%;
+ -webkit-transition: all 0.3s ease-in 0.3s; // set transition type and time/
+ transition: all 0.3s ease-in 0.3s;
+}
+.animateddrawer.open {
+	position: fixed;
+	top: 30px; // top position of icon /
+	right: 35px; //right position of icon /
+	background: transparent;
+	z-index:9999;
+}
+.animateddrawer.open:before { // style when .open class is added to button /
+	top: 50%;
+	margin-top: -0.3em; // set this to - half of top drawer line height ///
+	opacity: 0;
+}
+.animateddrawer.open:after { // style when .open class is added to button 
+	bottom: 50%;
+	opacity: 0;
+}
+.animateddrawer.open span { // style when .open class is added to button /
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.animateddrawer.open span:after { // style when .open class is added to button /
+	-ms-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}*/
+.cimg {
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  width: 37px;
+}
