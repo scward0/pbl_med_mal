@@ -33,7 +33,7 @@ $(document).ready(function(){
     }
   }) ;
 
-  $('.fa-bars').click(function(){
+  $('i.fa.fa-bars.fa-4x::before').click(function(){
     $('.nav-menu li a').addClass('animated zoomIn');
   });
   $('.cimg').click(function(){
