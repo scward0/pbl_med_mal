@@ -37,7 +37,7 @@ $(document).ready(function(){
     $('.navcontent ul li').addClass('animated zoomIn');
   });
   $('.cimg').click(function(){
-    $('.navcontent ul li a').removeClass('animated zoomIn');
+    $('.navcontent ul li').removeClass('animated zoomIn');
   });
   $(".navcontent ul li a").mouseover(function(){
     $(this).addClass('animated pulse');
