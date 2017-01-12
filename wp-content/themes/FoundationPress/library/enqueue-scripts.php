@@ -25,7 +25,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '2.9.0', true );
 
-	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/javascript/custom.js', array('jquery'), '2.9.0', true );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/javascript/custom/custom.js', array('jquery'), '2.9.0', true );
 
 
 	// Add the comment-reply library on pages where it is necessary

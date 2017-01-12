@@ -25,9 +25,6 @@
   </div>
 </div>
 
-
-
-
  <section class="row no-max collapse" id='pillars' style="padding: 0; margin: 0; background: #7D8F9B; ">
    <div class="small-12 medium-12 large-4 columns">
      <div class="block text-center">
