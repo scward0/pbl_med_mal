@@ -14,8 +14,8 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="wp-content/themes/FoundationPress/slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="wp-content/themes/FoundationPress/slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="http://198.58.102.147/pbl_med_mal/wp-content/themes/FoundationPress/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="http://198.58.102.147/pbl_med_mal/wp-content/themes/FoundationPress/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 		<?php wp_head(); ?>

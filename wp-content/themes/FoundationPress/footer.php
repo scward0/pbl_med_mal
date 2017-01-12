@@ -39,11 +39,7 @@
 <?php wp_footer(); ?>
 
 
-<script type="text/javascript" src="wp-content/themes/FoundationPress/slick/slick.min.js"></script>
-<script type="text/javascript">
-  
-</script>
-
+<script type="text/javascript" src="http://198.58.102.147/pbl_med_mal/wp-content/themes/FoundationPress/slick/slick.min.js"></script>
 <style media="screen">
     @keyframes slideInUp {
     from {
