@@ -31,13 +31,13 @@ $(document).ready(function(){
         $('.awards').addClass('animated slideInUp fadeIn');
       }
     }
-  });
+  }) ;
 
   $('.fa-bars').click(function(){
-    $('.navcontent ul li').addClass('animated zoomIn');
+    $('.nav-menu li a').addClass('animated zoomIn');
   });
   $('.cimg').click(function(){
-    $('.navcontent ul li').removeClass('animated zoomIn');
+    $('.nav-menu li a').removeClass('animated zoomIn');
   });
   $(".navcontent ul li a").mouseover(function(){
     $(this).addClass('animated pulse');
