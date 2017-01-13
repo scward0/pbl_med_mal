@@ -9,9 +9,12 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <div class="container white">
     <div class="row">
-      <div class="columns small-12 medium-12 large-8" id="case-study">
+      <div class="columns small-12 medium-12 large-8">
         <br><br>
         <h3 class="text-center"><?php the_title(); ?></h3>
+        <p>
+          the_content();
+        </p>
         <br>
       </div>
     </div>
