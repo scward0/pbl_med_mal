@@ -7898,20 +7898,23 @@ label[for="nf-field-9"] {
 #case-study {
   padding: 5% 5% 5% 5%; }
 
-#case-study h4, #case-study h3, #articles h4, #articles h3 {
+#case-study h4, #case-study h3, #articles h4, #articles h3, #blog-post h4, #blog-post h3 {
   text-transform: uppercase;
   color: #374A58;
   margin: 0; }
 
-#case-study p, #articles p {
+#case-study p, #articles p, #blog-post p {
   font-size: 16px !important;
   color: #9FA1A0;
   margin: 0; }
 
-#case-study #date, #articles #date {
+#case-study #date, #articles #date, #blog-post #date {
   font-size: 20px !important;
   color: #9FA1A0;
   margin: 0;
   text-transform: uppercase; }
+
+.contact-info p {
+  font-size: 16px !important; }
 
 /*# sourceMappingURL=foundation.css.map */
