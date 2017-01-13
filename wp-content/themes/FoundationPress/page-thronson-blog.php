@@ -11,7 +11,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="blog-post">
         <br><br>
-        <h3 class="text-center"><?php the_title(); ?></h3>
+        <h3 class="text-center" style="text-transform: uppercase; color: #374A58; margin: 0;"><?php the_title(); ?></h3>
         <br>
         <?php
           $args = array(
@@ -22,11 +22,10 @@
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
         <h4><?php echo get_the_title(); ?></h4>
-        <p id="date">
+        <p id="date" style="font-size: 20px; color: ##9FA1A0; margin: 0; text-transform: uppercase;">
           <?php echo get_field('date'); ?>
         </p>
-
-        <p id="short-entry">
+        <p id="short-entry" style="font-size: 16px; color: #9fa1a0; margin: 0;" >
           <?php echo wp_trim_words( get_field('entry'), 40, '...'); ?>
         </p>
 
