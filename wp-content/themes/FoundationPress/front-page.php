@@ -20,7 +20,7 @@
       HANDLING MEDICAL MALPRACTICE CASES
     </p>
     <p class="text-center">
-      <a id="learn-more" class="button" href="http://redirectdigital.com/">LEARN MORE</a>
+      <a id="learn-more" class="button" href="http://198.58.102.147/pbl_med_mal/#practice-areas">LEARN MORE</a>
     </p>
   </div>
 </div>
