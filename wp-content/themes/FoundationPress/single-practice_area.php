@@ -8,7 +8,7 @@
 
 <div class="row" class="collapse">
   <div class="hero">
-    <img src="<?php the_field('hero'); ?>" alt="" style="width: 100%; position: absolute; top: 100px; left: 0; right: 0;" />
+    <img src="<?php the_field('hero'); ?>" alt="" style="width: 100%; margin-top: 95px;" />
   </div>
 </div>
 
