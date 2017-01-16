@@ -77,7 +77,7 @@
   <?php endwhile; endif; wp_reset_postdata(); ?>
 </section>
 
-<section class="row no-max" style="background: #374a59; padding: 50px; margin: 0;">
+<section class="row no-max collapse" style="background: #374a59; padding: 50px; margin: 0;">
   <div class="pbl">
     <h1 class="text-center">Parsons Behle & Latimer</h1>
     <p class="text-center">
