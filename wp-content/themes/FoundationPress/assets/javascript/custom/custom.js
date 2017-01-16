@@ -12,8 +12,8 @@ $(document).ready(function(){
   });
 
   $(window).scroll(function() {
-    var hT = $('.footer').offset().top,
-         hH = $('.footer').outerHeight(),
+    var hT = $('.recognitions').offset().top,
+         hH = $('.recognitions').outerHeight(),
          wH = $(window).height(),
          wS = $(this).scrollTop(),
          windowWidth = $(window).width();
