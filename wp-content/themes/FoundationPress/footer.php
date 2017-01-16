@@ -5,7 +5,7 @@
     </div>
     <div class="columns small-12 medium-6">
       <div class="contact-info" style="float: left">
-        <p  style="color: white;">
+        <p class="body-copy" style="color: white;">
           <span style="font-size: 120%; font-weight: bold;">Charles H. Thronson</span><br>
           Parsons Behle & Latimer<br>
           201 South Main Street, Suite 1800<br>
@@ -30,7 +30,7 @@
 
   <div class="row text-center">
     <br><br>
-    <p style="color: white; font-size: 12px;">
+    <p class="body-copy" style="color: white; font-size: 12px;">
       All rights reserved &copy; <?php echo date("Y"); ?> - Charles H Thronson Attorney at Law
     </p>
   </div>

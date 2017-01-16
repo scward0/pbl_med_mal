@@ -12,7 +12,9 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="about">
         <h3 class="text-center"><?php the_title(); ?></h3>
-        <?php the_field('content'); ?>
+        <p class="body-copy">
+            <?php echo get_field('content'); ?>
+        </p>  
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
           <?php the_field('ninja'); ?>

@@ -7868,16 +7868,18 @@ body {
   background: #cad1d6 !important;
   padding: 5%;
   -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); }
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: Arial !important; }
 
 .nf-form-title h3 {
   color: white !important;
-  font-size: 20px !important;
+  font-size: 28px !important;
   font-weight: bold !important;
   text-transform: uppercase; }
 
 label[for="nf-field-9"] {
-  color: #374A58 !important; }
+  color: #374A58 !important;
+  font-family: Arial !important; }
 
 .nf-submit-button {
   background-color: #d87503 !important;
@@ -7889,21 +7891,25 @@ label[for="nf-field-9"] {
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #394D5C !important;
+  font-family: Arial !important;
   font-weight: bold; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #394D5C !important;
+  font-family: Arial !important;
   font-weight: bold; }
 
 :-ms-input-placeholder {
   /* IE 10+ */
   color: #394D5C !important;
+  font-family: Arial !important;
   font-weight: bold; }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #394D5C !important;
+  font-family: Arial !important;
   font-weight: bold; }
 
 .white {
@@ -7930,5 +7936,8 @@ label[for="nf-field-9"] {
 
 .contact-info p {
   font-size: 16px !important; }
+
+.body-copy {
+  font-family: Arial !important; }
 
 /*# sourceMappingURL=foundation.css.map */
