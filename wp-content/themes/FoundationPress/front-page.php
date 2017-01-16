@@ -66,12 +66,12 @@
   </style>
     <div class=" hide-for-small-only column " style="padding: 0; margin: 0;">
       <div class="practice-area transition" style="padding: 0; margin: 0;">
-        <a class="transition" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+        <a class="transition" href="<?php the_field('custom_link'); ?>"><?php the_post_thumbnail('large'); ?></a>
       </div>
     </div>
     <div class="show-for-small-only column " style="padding: 0; margin: 0;">
       <div class="practice-area transition" style="padding: 0; margin: 0;">
-        <a class="transition" href="<?php the_permalink(); ?>"><img src="<?php the_field('mobile_thumbnail'); ?>" alt="" /></a>
+        <a class="transition" href="<?php the_field('custom_link'); ?>"><img src="<?php the_field('mobile_thumbnail'); ?>" alt="" /></a>
       </div>
     </div>
   <?php endwhile; endif; wp_reset_postdata(); ?>
