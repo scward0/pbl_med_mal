@@ -130,7 +130,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background: #78838a;
-  opacity: 1;
+  opacity: .5;
   top: 0;
   width: 100%;
   z-index: 5;
@@ -164,10 +164,10 @@ body {
   background-color:rgba(0, 0, 0, 0.3);
   background-size: cover;
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  padding: 1%;
+  padding: 2%;
   border: 5px solid rgba(255, 255, 255, 0.6);
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 
@@ -191,8 +191,8 @@ body {
 
 @media screen and (max-width: 768px){
   .headline{
-    top: 65%;
-    padding: 1%;
+    top: 75%;
+    padding: 2%;
   }
   .headline h1{
     font-size: 36px;
