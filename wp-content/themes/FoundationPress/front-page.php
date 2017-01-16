@@ -101,6 +101,12 @@
       width: 75px;
       }
     }
+    @media screen and (max-width: 640px){
+      .awards{
+        width: 80px;
+        margin: 15px;
+      }
+    }
   </style>
   <div class="container" style="background: #8E9CA7;">
     <div class="footer">
