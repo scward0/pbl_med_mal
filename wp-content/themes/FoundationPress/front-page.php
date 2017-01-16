@@ -111,40 +111,40 @@
   <div class="container" style="background: #8E9CA7;">
     <div class="footer">
       <div class="row" style="padding-top: 50px;">
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/AAFJ_logo.png"  class="awards" alt="AAFJ" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/top_100.png" class="awards" alt="Top 100" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/BestLogo_2012.png"  class="awards" alt="Best 2012" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/BestLogo_2016.png" class="awards" alt="Best 2016" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/Mountain_States.png" class="awards" alt="Mountain States" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/UAFJ_logo.png" class="awards" alt="UAFJ" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/ACQ5.png" class="awards" alt="ACQ5" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/peers.png" class="awards" alt="Peers" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/NAOPIALogo.png"  class="awards" alt="NAOPIAL" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center">
+        <div class="columns small-12 medium-4 large-2 text-center">
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/top_one.png" class="awards" alt="Top One" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/legal_elite.png"  class="awards" alt="Legal Elite" />
         </div>
-        <div class="columns small-6 medium-4 large-2 text-center" >
+        <div class="columns small-12 medium-4 large-2 text-center" >
           <img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/AVPreeminent.png" class="awards" alt="AV" />
         </div>
       </div>
