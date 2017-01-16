@@ -1,4 +1,4 @@
-<footer>
+<footer style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/Footer.jpg') no-repeat center bottom;">
   <div class="row" style="margin-top: 100px;">
     <div class="columns small-12 medium-6">
       <img style="float: right;" src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/pbl_logo.png" class="pbl-logo" width="100px" alt="" />
