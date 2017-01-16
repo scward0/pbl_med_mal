@@ -109,7 +109,7 @@
     }
   </style>
   <div class="container" style="background: #8E9CA7;">
-    <div class="recognitions">
+    <div class="footer">
       <div class="row" style="padding-top: 50px;">
         <div class="columns small-12 medium-4 large-2 text-center">
           <a href="https://www.justice.org/" target="_blank"><center><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/AAFJ_logo.png"  class="awards" alt="AAFJ" />

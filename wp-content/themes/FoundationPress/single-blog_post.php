@@ -16,7 +16,7 @@
         <p id="date" style="font-size: 20px !important; color: #9FA1A0; margin: 0; text-transform: uppercase;">
           <?php echo get_field('date'); ?>
         </p>
-        <p id="entry" class="body-copy" style="font-size: 16px !important; color: #9FA1A0;margin: 0;">
+        <p id="entry" class="body-copy" style="font-size: 16px !important; color: #9FA1A0;margin: 0; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
           <?php echo get_field('entry'); ?>
         </p>
       </div>

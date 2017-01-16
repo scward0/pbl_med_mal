@@ -12,9 +12,9 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="about">
         <h3 class="text-center"><?php the_title(); ?></h3>
-        <p class="body-copy">
+        <p class="body-copy" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
             <?php echo get_field('content'); ?>
-        </p>  
+        </p>
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
           <?php the_field('ninja'); ?>

@@ -12,7 +12,9 @@
     <div class="row" style="padding-top: 5%;">
       <div class="columns small-12 medium-12 large-8" id="about">
         <h1 class="text-center"><?php the_title(); ?></h1>
-        <?php the_field('content'); ?>
+        <p>
+          <?php echo the_field('content'); ?>
+        </p>
       </div>
       <div class="columns small-12 medium-12 large-4">
           <?php the_field('ninja'); ?>
