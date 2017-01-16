@@ -305,6 +305,20 @@ body {
   height: 60%!important;
 }
 
+
+.hero{
+	width: 100%;
+	margin-top: 95px;
+}
+
+@media screen and (max-width: 425px){
+	.hero{
+		margin-top: 85px;
+	}
+}
+
+
+
 #about{
   padding: 5% 5% 5% 5%;
 
