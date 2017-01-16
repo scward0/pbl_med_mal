@@ -76,8 +76,11 @@
 						font-weight: 300;
 					}
 					.fa-bars{
-						top: 20px;
-						right: 30px;
+						top: 15px;
+						right: 25px;
+					}
+					a[href="http://198.58.102.147/pbl_med_mal/#practice-areas"]{
+						margin-top: 20px;
 					}
 				}
 				</style>
