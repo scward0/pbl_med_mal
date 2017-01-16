@@ -7755,6 +7755,11 @@ body {
   .headline p {
     font-size: 18px; } }
 
+@media screen and (max-width: 425px) {
+  .headline {
+    width: 85% !important;
+    padding: 2%; } }
+
 #learn-more {
   background-color: #d87503 !important;
   -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
