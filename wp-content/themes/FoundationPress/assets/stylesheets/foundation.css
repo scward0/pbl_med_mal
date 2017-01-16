@@ -7669,8 +7669,7 @@ body#tinymce {
 
 body, html {
   height: 100%;
-  background: #8E9CA7;
-  font-family: NewsGothic; }
+  background: #8E9CA7; }
 
 h1, h2, h3, h4, li, a {
   font-family: NewsGothic !important; }
@@ -7771,7 +7770,7 @@ body {
 
 #pillars .block h3 {
   font-size: 42px;
-  border: 2px solid white;
+  border: 5px solid rgba(255, 255, 255, 0.6);
   color: white;
   text-transform: uppercase;
   padding: 10%;
@@ -7938,9 +7937,6 @@ label[for="nf-field-9"] {
   font-size: 16px !important; }
 
 .body-copy {
-  font-family: Arial !important; }
-
-footer {
-  background: url("http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/Footer.jpg"); }
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
 
 /*# sourceMappingURL=foundation.css.map */

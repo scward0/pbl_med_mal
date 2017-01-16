@@ -105,7 +105,6 @@
 body, html {
    height: 100%;
    background: #8E9CA7;
-   font-family: NewsGothic;
 }
 
 h1, h2, h3, h4, li, a{
@@ -223,7 +222,7 @@ body {
 
 #pillars .block h3{
   font-size: 42px;
-  border: 2px solid white;
+	border: 5px solid rgba(255, 255, 255, 0.6);
   color: white;
   text-transform: uppercase;
   padding: 10%;
@@ -427,5 +426,5 @@ label[for="nf-field-9"]{
 }
 
 .body-copy{
-	font-family: Arial !important;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
 }
