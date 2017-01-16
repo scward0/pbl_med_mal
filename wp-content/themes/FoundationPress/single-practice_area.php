@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="row" class="collapse">
+<div class="row" class="collapse" style="max-width: none;">
   <div class="hero">
     <img src="<?php the_field('hero'); ?>" alt="" style="width: 100%; margin-top: 95px;" />
   </div>
