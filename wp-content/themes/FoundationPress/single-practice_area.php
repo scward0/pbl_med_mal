@@ -1,9 +1,3 @@
-<!-- <div class="container">
-  <div style="background: url(''); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" >
-
-  </div>
-</div> -->
-
 <?php get_header(); ?>
 
 <div class="row" class="collapse" style="max-width: none;">

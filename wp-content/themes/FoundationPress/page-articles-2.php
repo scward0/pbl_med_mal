@@ -1,12 +1,10 @@
+<?php get_header(); ?>
 
-
-
-<div class="container">
-  <div style="background: url('<?php the_field('hero'); ?>'); height: 50%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;" >
-    <?php get_header(); ?>
+<div class="row" class="collapse" style="max-width: none;">
+  <div>
+    <img class="hero" src="<?php the_field('hero'); ?>" alt="hero image" style="width: 100%; margin-top: 95px;" />
   </div>
 </div>
-
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
