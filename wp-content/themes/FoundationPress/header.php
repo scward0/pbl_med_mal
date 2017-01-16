@@ -49,7 +49,7 @@
 					font-size: 80% !important;
 					font-weight: 300;
 				}
-				a[href="http://198.58.102.147/pbl_med_mal/practice_area/catastrophic-patient-injuries/"]{
+				a[href="http://198.58.102.147/pbl_med_mal/practice_area/medication-errors/"]{
 					margin-bottom: 20px;
 				}
 				a[href="http://198.58.102.147/pbl_med_mal/about/"]{
