@@ -1,16 +1,16 @@
 <div class="collapse" style="padding: 0;">
   <div class="slick">
-    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; " src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/hero2.png">
-      <img style="display: none;" alt="" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; ">
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
     </div>
-    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <img style="display: none;" alt="" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
     </div>
-    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <img style="display: none;" alt="" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
     </div>
-    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <img style="display: none;" alt="" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
     </div>
   </div>
   <?php get_header(); ?>
