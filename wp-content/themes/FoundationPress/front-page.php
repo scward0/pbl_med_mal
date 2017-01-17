@@ -103,7 +103,7 @@
     }
     @media screen and (max-width: 640px){
       .awards{
-        width: 80px;
+        width: 120px;
         margin: 15px;
       }
     }
@@ -131,7 +131,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="columns small-12 medium-2large-2" >
+        <div class="columns small-12 medium-2 large-2" >
           <a href="http://www.acq5.com/" target="_blank"><center><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/ACQ5.png" class="awards" alt="ACQ5" /></center></a>
         </div>
         <div class="columns small-12 medium-2 large-2" >

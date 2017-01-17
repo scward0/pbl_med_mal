@@ -20,7 +20,7 @@ $(document).ready(function(){
          wS = $(this).scrollTop(),
          windowWidth = $(window).width();
 
-    if(windowWidth > 1024){
+    if(windowWidth > 1023){
       $('.awards').addClass('hide');
 
       if (wS < (hT+hH-wH-300)){
