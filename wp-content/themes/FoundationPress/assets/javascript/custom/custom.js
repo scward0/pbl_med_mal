@@ -20,7 +20,7 @@ $(document).ready(function(){
          wS = $(this).scrollTop(),
          windowWidth = $(window).width();
 
-    if(windowWidth > 768){
+    if(windowWidth > 1024){
       $('.awards').addClass('hide');
 
       if (wS < (hT+hH-wH-300)){
@@ -34,14 +34,6 @@ $(document).ready(function(){
       }
     }
   }) ;
-
-
-  if(windowWidth < 768){
-      $('.awards').addClass('hide');
-      $('.desktop-footer').addClass('hide');
-      $('.mobile-footer').removeClass('hide');
-  }
-
 
 
   $('i.fa.fa-bars.fa-4x::before').click(function(){
