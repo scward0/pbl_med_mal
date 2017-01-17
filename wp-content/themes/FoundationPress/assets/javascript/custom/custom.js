@@ -40,10 +40,10 @@ $(document).ready(function(){
     $('.nav-menu li a').removeClass('animated zoomIn');
   });
   $(".navcontent ul li a").mouseover(function(){
-    $(this).addClass('bold transition');
+    $(this).addClass('smooth animated pulse');
   });
   $(".navcontent ul li a").mouseout(function(){
-    $(this).removeClass('bold transition');
+    $(this).removeClass('smooth animated pulse');
   });
   $(".practice-area").mouseover(function(){
     $(this).addClass('animated pulse');
