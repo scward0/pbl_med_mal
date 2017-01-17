@@ -1,8 +1,14 @@
 <?php get_header(); ?>
 
-<div class="row" class="collapse" style="max-width: none;">
+<div class="row" class="collapse show-for-medium" style="max-width: none;">
   <div>
     <img class="hero" src="<?php the_field('hero'); ?>" alt="hero image" style="width: 100%;" />
+  </div>
+</div>
+
+<div class="row" class="collapse show-for-small-only" style="max-width: none;">
+  <div>
+    <img class="hero" src="<?php the_field('mobile_hero'); ?>" alt="mobile hero image" style="width: 100%;" />
   </div>
 </div>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
