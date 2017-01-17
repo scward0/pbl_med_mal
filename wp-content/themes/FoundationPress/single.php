@@ -2,7 +2,7 @@
 
 <div class="row" class="collapse" style="max-width: none;">
   <div>
-    <img class="hero" src="<?php the_field('hero'); ?>" alt="hero image" style="width: 100%; margin-top: 95px;" />
+    <img class="hero" src="<?php the_field('hero'); ?>" alt="hero image" style="width: 100%;" />
   </div>
 </div>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
