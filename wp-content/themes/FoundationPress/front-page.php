@@ -89,8 +89,8 @@
 <section>
   <style media="screen">
     .awards{
-      width: 110px;
-      margin: 15px;
+      width: 100px;
+      margin: 10px;
     }
     @media screen and (max-width: 640px){
       .awards{
