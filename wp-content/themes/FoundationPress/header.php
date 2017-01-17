@@ -43,7 +43,6 @@
 				.nav-menu li a{
 					font-size: 110%;
 					text-transform: uppercase;
-					/*font-weight: bold;*/
 				}
 				a[href="http://198.58.102.147/pbl_med_mal/practice_area/catastrophic-patient-injuries/"], a[href="http://birthinjuryattorneyinfo.com/charles-thronson/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/medication-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/surgical-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/hospital-misdiagnosis/"]{
 					font-size: 80% !important;
