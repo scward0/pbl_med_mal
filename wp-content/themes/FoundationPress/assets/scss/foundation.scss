@@ -243,12 +243,6 @@ body {
 }
 
 @media screen and (max-width: 425px){
-	#pillars .block h3{
-		height: 250px !important;
-	}
-}
-
-@media screen and (max-width: 425px){
   #pillars .block h3{
     font-size: 300%;
   }
@@ -258,7 +252,6 @@ body {
 	#pillars .block h3 .smaller{
 	  line-height: 28px;
 	}
-
 }
 
 .pbl{
