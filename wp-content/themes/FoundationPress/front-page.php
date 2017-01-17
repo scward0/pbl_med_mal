@@ -137,15 +137,6 @@
           <a href="https://www.utahassociationforjustice.org/" target="_blank"><center><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/UAFJ_logo.png" class="awards" alt="UAFJ" /></center></a>
         </div>
 
-      </div>
-
-        <!-- Second Row Desktop -->
-
-
-
-
-
-      <div class="row">
 
         <div class="columns small-12 medium-4 large-2" >
           <a href="http://www.acq5.com/" target="_blank"><center><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/ACQ5.png" class="awards" alt="ACQ5" /></center></a>
