@@ -7715,6 +7715,9 @@ body {
   top: 30px;
   margin-left: 20px; }
 
+.bold {
+  font-weight: bold; }
+
 .headline {
   width: 75%;
   background-color: rgba(0, 0, 0, 0.3);
