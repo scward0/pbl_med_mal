@@ -7791,7 +7791,9 @@ body {
   #pillars .block h3 {
     font-size: 300%; }
   #pillars .block {
-    padding: 5% 10% 5% 10%; } }
+    padding: 5% 10% 5% 10%; }
+  #pillars .block h3 .smaller {
+    line-height: 28px; } }
 
 .pbl {
   background: url("http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/pbl_block_background.png");
