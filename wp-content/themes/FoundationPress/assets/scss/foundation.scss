@@ -231,6 +231,24 @@ body {
   line-height: 25px;
 }
 
+@media screen and (min-width: 1474px){
+  #pillars .block{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1205px) and (max-width: 1473px){
+  #pillars .block{
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1470px){
+  #pillars .block{
+    height: 315px;
+  }
+}
+
 #pillars .block h3 .smaller{
   padding-top: 0;
   font-size: 40%;
