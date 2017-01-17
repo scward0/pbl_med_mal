@@ -28,7 +28,7 @@
  <section class="row no-max collapse" id='pillars' style="padding: 0; margin: 0; background: #7D8F9B; ">
    <div class="small-12 medium-12 large-4 columns">
      <div class="block text-center">
-       <h3 style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/experience2.png'); background-size:cover; opacity: .8;" >Experience<br><br><span class="smaller">Led by Charles Thronson, the Personal Injury practice group at Parsons Behle and Latimer has more than thirty years of experience representing clients in complex medical malpractice cases.</span></h3>
+       <h3 style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/experience2.png'); background-size:cover;" >Experience<br><br><span class="smaller">Led by Charles Thronson, the Personal Injury practice group at Parsons Behle and Latimer has more than thirty years of experience representing clients in complex medical malpractice cases.</span></h3>
      </div>
    </div>
    <div class="small-12 medium-12 large-4 columns">
