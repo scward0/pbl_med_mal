@@ -58,6 +58,10 @@
 					margin-right: auto;
 				}
 
+				div.fullscreenmenu ul.nav-menu{
+					margin-top: 2em !important;
+				}
+
 				@media screen and (max-width: 850px){
 					#schedule{
 						display: none;
@@ -81,9 +85,7 @@
 					a[href="http://198.58.102.147/pbl_med_mal/#practice-areas"]{
 						margin-top: 20px;
 					}
-					div.fullscreenmenu ul.nav-menu{
-						margin-top: 2em !important;
-					}
+
 				}
 				</style>
 				<li class="home"><a class="desk-logo" href="<?php bloginfo('url'); ?>"><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/charles_thronson_logo.png" width="300" style="z-index: 5;"alt="<?php bloginfo('name'); ?>"/></a></li>
