@@ -7789,6 +7789,10 @@ body {
 
 @media screen and (max-width: 425px) {
   #pillars .block h3 {
+    height: 250px !important; } }
+
+@media screen and (max-width: 425px) {
+  #pillars .block h3 {
     font-size: 300%; }
   #pillars .block {
     padding: 5% 10% 5% 10%; }
