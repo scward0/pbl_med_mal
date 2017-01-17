@@ -35,6 +35,15 @@ $(document).ready(function(){
     }
   }) ;
 
+
+  if(windowWidth < 768){
+      $('.awards').addClass('hide');
+      $('.desktop-footer').addClass('hide');
+      $('.mobile-footer').removeClass('hide');
+  }
+
+
+
   $('i.fa.fa-bars.fa-4x::before').click(function(){
     $('.nav-menu li a').addClass('animated zoomIn');
   });
