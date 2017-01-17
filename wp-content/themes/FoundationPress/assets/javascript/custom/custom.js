@@ -41,11 +41,11 @@ $(document).ready(function(){
   $('.cimg').click(function(){
     $('.nav-menu li a').removeClass('animated zoomIn');
   });
-  $(".navcontent ul li a").mouseover(function(){
+  $(".navcontent ul li").mouseover(function(){
     $(this).addClass('animated pulse');
   });
-  $(".navcontent ul li a").mouseout(function(){
-    $(this).removeClass('animated fadeIn pulse');
+  $(".navcontent ul li").mouseout(function(){
+    $(this).removeClass('animated pulse');
   });
   $(".practice-area").mouseover(function(){
     $(this).addClass('animated pulse');
