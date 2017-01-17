@@ -7719,7 +7719,7 @@ body {
   font-weight: bold; }
 
 .smooth {
-  -webkit-font-smoothing: subpixel-antialiased; }
+  -webkit-font-smoothing: subpixel-antialiased !important; }
 
 .headline {
   width: 75%;

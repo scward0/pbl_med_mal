@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $(".navcontent ul li a").addClass('smooth');
+
   $('.slick').slick({
     dots: false,
     infinite: true,
@@ -40,10 +42,10 @@ $(document).ready(function(){
     $('.nav-menu li a').removeClass('animated zoomIn');
   });
   $(".navcontent ul li a").mouseover(function(){
-    $(this).addClass('smooth animated fadeIn');
+    $(this).addClass('animated pulse');
   });
   $(".navcontent ul li a").mouseout(function(){
-    $(this).removeClass('smooth animated fadeIn');
+    $(this).removeClass('animated fadeIn pulse');
   });
   $(".practice-area").mouseover(function(){
     $(this).addClass('animated pulse');
