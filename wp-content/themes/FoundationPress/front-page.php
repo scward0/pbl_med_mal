@@ -108,7 +108,7 @@
       }
     }
   </style>
-  <div class="container" style="background: #8E9CA7;">
+  <div class="container" style="background: #9FACB5;">
     <div class="footer">
       <div class="row" style="padding-top: 50px;">
 
