@@ -1,16 +1,16 @@
 <div class="collapse" style="padding: 0;">
   <div class="slick">
     <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; ">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
     <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
     <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
     <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="" />
+      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
   </div>
   <?php get_header(); ?>
@@ -71,7 +71,7 @@
     </div>
     <div class="show-for-small-only column " style="padding: 0; margin: 0;">
       <div class="practice-area transition" style="padding: 0; margin: 0;">
-        <a class="transition" href="<?php the_field('custom_link'); ?>"><img src="<?php the_field('mobile_thumbnail'); ?>" alt="" /></a>
+        <a class="transition" href="<?php the_field('custom_link'); ?>"><img src="<?php the_field('mobile_thumbnail'); ?>" alt="Practice Area" /></a>
       </div>
     </div>
   <?php endwhile; endif; wp_reset_postdata(); ?>
