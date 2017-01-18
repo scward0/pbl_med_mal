@@ -22,14 +22,10 @@
         <p class="body-copy">
           <?php echo get_field('content'); ?>
         </p>
+        <?php the_field('map'); ?>
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
           <?php the_field('ninja'); ?>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns small-12 medium-12 large-12">
-        <?php the_field('map'); ?>
       </div>
     </div>
   </div>
