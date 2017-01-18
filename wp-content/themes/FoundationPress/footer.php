@@ -40,6 +40,22 @@
 
 
 <script type="text/javascript" src="http://198.58.102.147/pbl_med_mal/wp-content/themes/FoundationPress/slick/slick.min.js"></script>
+<script type="text/javascript">
+  function initMap() {
+    var myLatLng = {lat: -25.363, lng: 131.044};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'Hello World!'
+    });
+  }
+</script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ&callback=initMap"></script>
 <style media="screen">
     @keyframes slideInUp {
