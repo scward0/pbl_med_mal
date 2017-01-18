@@ -29,8 +29,7 @@
     </div>
     <div class="row">
       <div class="columns small-12 medium-12 large-12">
-        <div id="map"></div>
-  
+        <?php echo do_shortcode("[huge_it_maps id='1']"); ?>
       </div>
     </div>
   </div>

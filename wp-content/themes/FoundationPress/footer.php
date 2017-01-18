@@ -56,7 +56,6 @@
     });
   }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ&callback=initMap"></script>
 <style media="screen">
     @keyframes slideInUp {
     from {
