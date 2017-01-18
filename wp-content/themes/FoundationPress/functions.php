@@ -71,12 +71,12 @@ add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 
 
-function my_acf_init() {
-
-	acf_update_setting('AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ', 'xxx');
-}
-
-add_action('acf/init', 'my_acf_init');
+// function my_acf_init() {
+//
+// 	acf_update_setting('AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ', 'xxx');
+// }
+//
+// add_action('acf/init', 'my_acf_init');
 
 
 

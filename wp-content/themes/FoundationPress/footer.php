@@ -40,6 +40,7 @@
 
 
 <script type="text/javascript" src="http://198.58.102.147/pbl_med_mal/wp-content/themes/FoundationPress/slick/slick.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ&callback=initMap"></script>
 <style media="screen">
     @keyframes slideInUp {
     from {
