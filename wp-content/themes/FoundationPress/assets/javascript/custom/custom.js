@@ -16,11 +16,11 @@ $(document).ready(function(){
   });
 
   $(window).scroll(function() {
-    var hT = $('.footer').offset().top,
-         hH = $('.footer').outerHeight(),
-         wH = $(window).height(),
-         wS = $(this).scrollTop(),
-         windowWidth = $(window).width();
+    // var hT = $('.footer').offset().top,
+    //      hH = $('.footer').outerHeight(),
+    //      wH = $(window).height(),
+    //      wS = $(this).scrollTop(),
+    //      windowWidth = $(window).width();
 
     if(windowWidth > 1023){
       $('.awards').addClass('hide');
