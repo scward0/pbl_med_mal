@@ -1,25 +1,18 @@
 <div class="collapse" style="padding: 0;">
   <div class="slick">
-    <div id="bg" style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; ">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; ">
+      <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div id="bg" style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+      <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div id="bg" style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+      <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div id="bg" style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden;">
-      <img style="display: none; height:100vh !important; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
+    <div style="background: url('http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+      <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
   </div>
-  <style media="screen">
-    @media screen and (max-width: 600px){
-      #bg{
-        background-attachment: scroll;
-      }
-    }
-  </style>
   <?php get_header(); ?>
   <div class="headline">
     <h1 class="text-center">ONE OF THE NATION'S LARGEST FIRMS</h1>
