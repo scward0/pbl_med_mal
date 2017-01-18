@@ -29,23 +29,27 @@
     </div>
     <div class="row">
       <div class="columns small-12 medium-12 large-12">
+        <style>
+           #map {
+             height: 400px;
+             width: 100%;
+            }
+        </style>
         <div id="map"></div>
-      <script>
-        function initMap() {
-          var uluru = {lat: -25.363, lng: 131.044};
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-          });
-          var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-          });
-        }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ&callback=initMap">
-      </script>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ&callback=initMap"></script>
       </div>
     </div>
   </div>
