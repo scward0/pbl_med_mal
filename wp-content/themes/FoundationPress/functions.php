@@ -68,5 +68,18 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+
+
+
+function my_acf_init() {
+
+	acf_update_setting('AIzaSyDsE-_-FVLPYMP2wBZCPWoLj9x3FSJNfUQ', 'xxx');
+}
+
+add_action('acf/init', 'my_acf_init');
+
+
+
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
