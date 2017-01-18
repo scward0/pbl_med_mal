@@ -22,6 +22,7 @@
         <p class="body-copy">
           <?php echo get_field('content'); ?>
         </p>
+        <br>
         <?php the_field('map'); ?>
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
