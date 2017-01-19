@@ -10,7 +10,7 @@
           Parsons Behle & Latimer<br>
           201 South Main Street, Suite 1800<br>
           Salt Lake City, Utah 84111<br>
-          800-532-0021
+          800-643-7752
         </p>
       </div>
     </div>
