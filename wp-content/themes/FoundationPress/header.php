@@ -89,7 +89,7 @@
 				}
 				</style>
 				<li class="home"><a class="desk-logo" href="<?php bloginfo('url'); ?>"><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/charles_thronson_logo.png" width="300" style="z-index: 5;"alt="<?php bloginfo('name'); ?>"/></a></li>
-				<li><span id="schedule">Schedule a free consultation: 800-532-0021</span></li>
+				<li><span id="schedule">Schedule a free consultation: 800-643-7752</span></li>
 				<i class="fa fa-bars fa-4x"  onclick="menu1.togglemenu(); return false"></i>
 			</ul>
 			<div class="navi hide">
