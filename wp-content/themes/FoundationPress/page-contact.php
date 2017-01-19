@@ -19,9 +19,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="about">
         <h3 class="text-center"><?php the_title(); ?></h3>
-        <p class="body-copy">
-          <?php echo get_field('content'); ?>
-        </p>
+        <?php the_field('content'); ?>
         <br>
         <?php the_field('map'); ?>
       </div>

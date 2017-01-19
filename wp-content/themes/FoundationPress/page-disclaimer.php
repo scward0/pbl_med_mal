@@ -19,9 +19,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-12" id="about">
         <h3 class="text-center"><?php the_title(); ?></h3>
-        <p class="body-copy">
-          <?php echo get_the_content(); ?>
-        </p>
+        <?php the_content(); ?>
       </div>
     </div>
   </div>

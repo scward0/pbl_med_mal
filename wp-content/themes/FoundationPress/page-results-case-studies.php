@@ -28,14 +28,10 @@
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
         <h4><?php echo get_the_title(); ?></h4>
-        <p id="date">
-          <?php echo get_field('date'); ?>
-        </p>
-
-        <p id="short-entry">
-          <?php echo wp_trim_words( get_field('entry'), 40, '...'); ?>
-        </p>
-
+        <div class="date">
+          <?php the_field('date'); ?>
+        </div>
+        <?php wp_trim_words( the_field('entry'), 40, '...'); ?>
         <a href="<?php the_permalink(); ?>" style="color: #E39F69; text-decoration: underline; font-size: 16px;">Full Article</a>
         <br><br><br>
 

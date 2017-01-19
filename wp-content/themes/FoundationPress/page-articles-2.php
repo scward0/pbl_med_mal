@@ -29,15 +29,15 @@
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
         <h4><?php echo get_the_title(); ?></h4>
-        <p id="date">
-          <?php echo get_field('date'); ?>
-        </p>
-        <p id="author">
-          <?php echo get_field('author') ?>
-        </p>
-        <p id="publication">
-          <i><?php echo get_field('publication') ?></i>
-        </p>
+        <div class="date">
+          <?php the_field('date'); ?>
+        </div>
+        <div id="author">
+          <?php the_field('author') ?>
+        </div>
+        <div id="publication">
+          <i><?php the_field('publication') ?></i>
+        </div>
         <a href="<?php the_field('url'); ?>" target="_blank" style="color: #E39F69; text-decoration: underline; font-size: 16px;">Full Article</a>
         <br><br><br>
 

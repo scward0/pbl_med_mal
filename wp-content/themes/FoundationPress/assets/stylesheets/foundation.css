@@ -7871,7 +7871,8 @@ body {
 
 #about ul li {
   font-size: 18px !important;
-  color: #9FA1A0; }
+  color: #9FA1A0;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
 
 #form {
   padding: 5% 2% 2% 2%; }
