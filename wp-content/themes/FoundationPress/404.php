@@ -29,9 +29,9 @@
   </div>
   <?php get_header(); ?>
   <div class="headline">
-    <h1 class="text-center">OOPS</h1>
+    <h1 class="text-center">404</h1>
     <p class="text-center">
-      404
+      Unfortunately, we cannot find the page you are looking for.
     </p>
     <p class="text-center">
       <a id="learn-more" class="button" href="http://198.58.102.147/pbl_med_mal/">Home Page</a>
