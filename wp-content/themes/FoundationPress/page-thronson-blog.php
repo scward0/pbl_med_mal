@@ -27,13 +27,13 @@
           ?>
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-        <h4><?php echo get_the_title(); ?></h4>
-        <p id="date" style="font-size: 20px; color: ##9FA1A0; margin: 0; text-transform: uppercase;">
-          <?php echo get_field('date'); ?>
-        </p>
-        <p id="short-entry" style="font-size: 16px; color: #9fa1a0; margin: 0;" >
-          <?php echo wp_trim_words( get_field('entry'), 40, '...'); ?>
-        </p>
+        <h4><?php the_title(); ?></h4>
+        <!-- <p id="date" style="font-size: 20px; color: #9FA1A0; margin: 0; text-transform: uppercase;"> -->
+          <?php the_field('date'); ?>
+        <!-- </p> -->
+        <!-- <p id="short-entry" style="font-size: 16px; color: #9fa1a0; margin: 0;" > -->
+          <?php wp_trim_words( the_field('entry'), 40, '...'); ?>
+        <!-- </p> -->
 
         <a href="<?php the_permalink(); ?>" style="color: #E39F69; text-decoration: underline; font-size: 16px;">Full Article</a>
         <br><br><br>
