@@ -382,9 +382,10 @@ label[for="nf-field-9"]{
 }
 
 .nf-response-msg{
-	font-size: 18px !important;
 	color: white !important;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+	font-size: 28px !important;
+	font-weight: bold !important;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 1023px){
@@ -441,7 +442,7 @@ label[for="nf-field-9"]{
   margin: 0;
 }
 
-#case-study #date, #articles #date, #blog-post #date{
+.date{
 	font-family: NewsGothic;
   font-size: 20px !important;
   color: #9FA1A0;
@@ -449,6 +450,11 @@ label[for="nf-field-9"]{
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px){
+	.article-block{
+		padding-left: 8%;
+	}
+}
 .contact-info p{
 	font-size: 16px !important;
 }

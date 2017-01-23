@@ -14,17 +14,13 @@
         <h3 class="text-center"><?php the_title(); ?></h3>
         <div class="body-copy">
             <?php the_field('content'); ?>
-        </div>
+        </div><br>
+        <div class="embed-container" style="padding: 10%;">
+           <?php the_field('video'); ?>
+         </div>
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
           <?php the_field('ninja'); ?>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns small-12 medium-12 large-12">
-        <div class="embed-container" style="padding: 10%;">
-	         <?php the_field('video'); ?>
-         </div>
       </div>
     </div>
   </div>

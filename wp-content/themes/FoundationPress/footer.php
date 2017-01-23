@@ -24,14 +24,15 @@
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;
+        padding: 10px !important;
       }
     }
   </style>
 
-  <div class="row text-center">
+  <div class="row text-center" style="padding: 0 10px 0 10px;">
     <br><br>
     <p class="body-copy" style="color: white; font-size: 12px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
-      All rights reserved &copy; <?php echo date("Y"); ?> - Charles H Thronson Attorney at Law
+      All rights reserved. &copy; <?php echo date("Y"); ?> <br> Charles H Thronson Attorney at Law
     </p>
   </div>
 </footer>
