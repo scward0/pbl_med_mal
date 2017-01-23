@@ -7944,8 +7944,7 @@ label[for="nf-field-9"] {
 #case-study h4, #case-study h3, #articles h4, #articles h3, #blog-post h4, #blog-post h3 {
   text-transform: uppercase;
   color: #374A58;
-  margin: 0;
-  font-size: 28px !important; }
+  margin: 0; }
 
 #case-study p, #articles p, #blog-post p {
   font-size: 16px !important;

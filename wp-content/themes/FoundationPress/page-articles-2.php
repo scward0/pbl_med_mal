@@ -29,7 +29,7 @@
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
           <div class="article-block">
-            <h4><?php echo get_the_title(); ?></h4>
+            <h3 style="font-size: 28px !important;"><?php echo get_the_title(); ?></h3>
             <div class="date">
               <?php the_field('date'); ?>
             </div>
