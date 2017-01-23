@@ -18,7 +18,7 @@
   <div class="container white">
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="about">
-        <h3 class="text-center"><?php the_title(); ?></h3>
+        <h3 class="text-center secondary-title"><?php the_title(); ?></h3>
         <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
           <?php echo get_field('content'); ?>
         </p>

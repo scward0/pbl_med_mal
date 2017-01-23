@@ -17,7 +17,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="blog-post">
         <br><br>
-        <h3 class="text-center" style="text-transform: uppercase; color: #374A58; margin: 0;"><?php the_title(); ?></h3>
+        <h3 class="text-center secondary-title"><?php the_title(); ?></h3>
         <br>
         <?php
           $args = array(
