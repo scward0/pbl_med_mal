@@ -7975,4 +7975,7 @@ label[for="nf-field-9"] {
 .secondary-title {
   font-size: 32px !important; }
 
+.ninja-forms-req-symbol, .nf-form-fields-required {
+  display: none !important; }
+
 /*# sourceMappingURL=foundation.css.map */
