@@ -18,7 +18,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="articles">
         <br><br>
-        <h3 class="text-center"><?php the_title(); ?></h3>
+        <h3 class="text-center" style="font-size: 24px !important;"><?php the_title(); ?></h3>
         <br>
         <?php
           $args = array(
@@ -29,7 +29,7 @@
 
         <?php if( $query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
           <div class="article-block">
-            <h3 style="font-size: 28px !important;"><?php echo get_the_title(); ?></h3>
+            <h4 ><?php echo get_the_title(); ?></h4>
             <div class="date">
               <?php the_field('date'); ?>
             </div>
