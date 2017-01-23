@@ -18,7 +18,7 @@
   <div class="container white">
     <div class="row">
       <div class="columns small-12 medium-12 large-8" id="blog-post">
-        <h3 class="text-center" style="text-transform: uppercase; color: #374A58; margin: 0;"><?php the_title(); ?></h3>
+        <h3 class="text-center secondary-title" ><?php the_title(); ?></h3>
         <p id="date" style="font-size: 20px !important; color: #9FA1A0; margin: 0; text-transform: uppercase;">
           <?php echo get_field('date'); ?>
         </p>
