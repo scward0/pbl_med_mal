@@ -7809,7 +7809,11 @@ body {
     line-height: 28px; } }
 
 .pbl {
-  background: url("http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/PBL.jpg");
+  background: url("http://198.58.102.147/pbl_med_mal/wp-content/uploads/2017/01/PBL_Second.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
   width: 90%;
   padding: 5%;
   border: 5px solid rgba(255, 255, 255, 0.6);
