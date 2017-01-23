@@ -41,23 +41,16 @@
 					padding: 1%;
 				}
 				.nav-menu li a{
-					font-size: 110%;
+					font-size: 100%;
 					text-transform: uppercase;
 				}
 				a[href="http://198.58.102.147/pbl_med_mal/practice_area/catastrophic-patient-injuries/"], a[href="http://birthinjuryattorneyinfo.com/charles-thronson/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/medication-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/surgical-errors/"], a[href="http://198.58.102.147/pbl_med_mal/practice_area/hospital-misdiagnosis/"]{
-					font-size: 80% !important;
+					font-size: 75% !important;
 					font-weight: 300;
 				}
 				a[href="http://198.58.102.147/pbl_med_mal/practice_area/medication-errors/"]{
 					margin-bottom: 20px;
 				}
-				a[href="http://198.58.102.147/pbl_med_mal/about/"]{
-					border-top: solid 5px #fcbc1e;
-					width: 60%;
-					margin-left: auto;
-					margin-right: auto;
-				}
-
 				div.fullscreenmenu ul.nav-menu{
 					margin-top: 2em !important;
 				}
@@ -85,7 +78,6 @@
 					a[href="http://198.58.102.147/pbl_med_mal/#practice-areas"]{
 						margin-top: 20px;
 					}
-
 				}
 				</style>
 				<li class="home"><a class="desk-logo" href="<?php bloginfo('url'); ?>"><img src="http://198.58.102.147/pbl_med_mal/wp-content/uploads/2016/12/charles_thronson_logo.png" width="300" style="z-index: 5;"alt="<?php bloginfo('name'); ?>"/></a></li>
