@@ -34,13 +34,13 @@
 
 
 
-define('DB_NAME', 'localwp');
+define('DB_NAME', 'pblmedicalmalpractice');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'SilverH3elm1!');
+define('DB_PASSWORD', 's!nCe1886');
 
 
 
