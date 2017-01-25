@@ -8,7 +8,7 @@
 
 <div class="row" class="collapse show-for-small-only" style="max-width: none;">
   <div>
-    <img class="hero show-for-small-only" src="<?php the_field('mobile_hero'); ?>" alt="mobile hero image" style="width: 100%;" />
+    <img class="hero show-for-small-only" src="<?php the_field('mobile_hero'); ?>" alt="mobile hero images" style="width: 100%;" />
   </div>
 </div>
 
