@@ -17,7 +17,15 @@
 		<link rel="stylesheet" type="text/css" href="http://www.medicalmalpracticeattorneyinfo.com/wp-content/themes/FoundationPress/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="http://www.medicalmalpracticeattorneyinfo.com/wp-content/themes/FoundationPress/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+		  ga('create', 'UA-35693720-4', 'auto');
+		  ga('send', 'pageview');
+		</script>
 		<?php wp_head(); ?>
 	</head>
 
