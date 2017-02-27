@@ -7871,11 +7871,11 @@ body {
 
 #about p {
   font-size: 18px !important;
-  color: #9FA1A0; }
+  color: #3e3e3f; }
 
 #about ul li {
   font-size: 18px !important;
-  color: #9FA1A0;
+  color: #3e3e3f;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
 
 #form {
@@ -7952,13 +7952,13 @@ label[for="nf-field-9"] {
 
 #case-study p, #articles p, #blog-post p {
   font-size: 16px !important;
-  color: #9FA1A0;
+  color: #3e3e3f;
   margin: 0; }
 
 .date {
   font-family: NewsGothic;
   font-size: 20px !important;
-  color: #9FA1A0;
+  color: #3e3e3f;
   margin: 0;
   text-transform: uppercase; }
 

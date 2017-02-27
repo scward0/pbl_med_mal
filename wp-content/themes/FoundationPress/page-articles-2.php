@@ -33,10 +33,10 @@
             <div class="date">
               <?php the_field('date'); ?>
             </div>
-            <div id="author" style="font-size: 16px !important;color: #9FA1A0;margin: 0;">
+            <div id="author" style="font-size: 16px !important;color: #3e3e3f;margin: 0;">
               <?php the_field('author') ?>
             </div>
-            <div id="publication" style="font-size: 16px !important;color: #9FA1A0;margin: 0;">
+            <div id="publication" style="font-size: 16px !important;color: #3e3e3f;margin: 0;">
               <i><?php the_field('publication') ?></i>
             </div>
             <a href="<?php the_field('url'); ?>" target="_blank" style="color: #E39F69; text-decoration: underline; font-size: 16px;">Full Article</a>

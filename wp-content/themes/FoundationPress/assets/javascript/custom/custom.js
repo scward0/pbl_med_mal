@@ -12,7 +12,7 @@ $(document).ready(function(){
     cssEase: 'linear',
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 4000,
   });
 
   $(window).scroll(function() {
