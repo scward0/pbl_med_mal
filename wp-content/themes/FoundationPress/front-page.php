@@ -59,14 +59,10 @@
  <section>
    <style media="screen">
      .awards{
-       width: 95px;
+       width: 130px;
        margin: 8px;
      }
      @media screen and (max-width: 640px){
-       .awards{
-         width: 50px;
-         margin: 15px;
-       }
        .pbl-logo{
        width: 75px;
        }
