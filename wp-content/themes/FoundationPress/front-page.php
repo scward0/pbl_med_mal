@@ -75,7 +75,7 @@
        }
      }
    </style>
-   <div class="container" style="background: #9FACB5;">
+   <div class="container" style="background: white;">
      <div class="footer">
        <br /><br />
        <div class="row">
