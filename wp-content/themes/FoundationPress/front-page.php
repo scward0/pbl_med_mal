@@ -107,7 +107,7 @@
  <section class="row no-max" style="background: white; padding: 50px; margin: 0;">
    <div class="columns small-12 medium-12 large-6">
      <div class="pbl">
-       <h1 class="text-center">Meet Charles</h1>
+       <a class="text-center" href="http://www.medicalmalpracticeattorneyinfo.com/about/"><h1 class="text-center">Meet Charles</h1></a>
        <p class="text-center">
          35 years of experience in personal injury and medical malpractice resulting in some of the largest verdicts and settlements in the Western United States
        </p>
@@ -115,7 +115,7 @@
    </div>
    <div class="columns small-12 medium-12 large-6">
      <div class="pbl">
-       <h1 class="text-center">Parsons Behle & Latimer</h1>
+       <a class="text-center" href="http://www.medicalmalpracticeattorneyinfo.com/parsons-behle-latimer/"><h1 class="text-center">Parsons Behle & Latimer</h1></a>
        <p class="text-center">
        Since 1882 our success has been firmly rooted in our fundamental core values: client service; professional integrity; ethics and professionalism; collegiality; and community service.
        </p>
