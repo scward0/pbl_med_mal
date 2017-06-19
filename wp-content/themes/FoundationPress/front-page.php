@@ -1,11 +1,12 @@
-``<div class="collapse" style="padding: 0;">
+
+<div class="collapse" style="padding: 0;">
   <div class="slick desk-slick hide-for-small-only">
     <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; ">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
     <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
-    </div>``
+    </div>
     <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
@@ -39,7 +40,7 @@
   </div>
 </div>
 
- <section class="row no-max collapse" id='pillars' style="padding: 0; margin: 0; background: #7D8F9B; ">
+ <section class="row no-max collapse" id='pillars' style="padding: 0; margin: 0; background: white; ">
    <div class="small-12 medium-12 large-4 columns">
      <div class="block text-center">
        <h3 style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/experience2.png'); background-size:cover;" >Experience<br><br><span class="smaller">Led by Charles Thronson, the Personal Injury practice group at Parsons Behle &amp; Latimer has more than thirty years of experience representing clients in complex medical malpractice cases.</span></h3>
@@ -79,49 +80,50 @@
        <br /><br />
        <div class="row">
          <div class="columns small-12 medium-3 large-3">
-           <a href="https://www.superlawyers.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/SLUtah.png" class="awards" alt="Top 100" /></center></a><br />
-           <a href="https://www.superlawyers.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/SLMountain.png" class="awards" alt="Mountain States" /></center></a><br />
-           <a href="https://www.justice.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/AAofJ.png"  class="awards" alt="AAFJ" /><br />
-           <a href="http://www.acq5.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/ACQ5_awards.png" class="awards" alt="ACQ5" style="margin-top: 40px;" /></center></a><br />
+           <a href="https://www.superlawyers.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/SLUtah2.png" class="awards" alt="Top 100" /></center></a><br />
+           <a href="https://www.superlawyers.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/SLMountain2.png" class="awards" alt="Mountain States" /></center></a><br />
+           <a href="https://www.justice.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/AAofJ2.png"  class="awards" alt="AAFJ" /><br />
+           <a href="http://www.acq5.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/ACQ5_awards2.png" class="awards" alt="ACQ5" style="margin-top: 40px;" /></center></a><br />
          </div>
          <div class="columns small-12 medium-3 large-3">
-           <a href="https://www.bestlawyers.com/lawyers/charles-h-thronson/29293/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/2016Best.png" class="awards" alt="Best 2016"/></center></a><br>
-           <a href="https://www.distinguishedcounsel.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/TopOne.png" class="awards" alt="Top One"/></center></a>
+           <a href="https://www.bestlawyers.com/lawyers/charles-h-thronson/29293/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/2016Best2.png" class="awards" alt="Best 2016"/></center></a><br>
+           <a href="https://www.distinguishedcounsel.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/TopOne2.png" class="awards" alt="Top One"/></center></a>
          </div>
          <div class="columns small-12 medium-3 large-3">
-           <a href="https://www.bestlawyers.com/lawyers/charles-h-thronson/29293/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/2012Best.png"  class="awards" alt="Best 2012"/></center></a><br>
-           <a href="http://www.naopia.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/NAOPIALogo.png"  class="awards" alt="NAOPIAL"/></center></a>
+           <a href="https://www.bestlawyers.com/lawyers/charles-h-thronson/29293/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/2012Best2.png"  class="awards" alt="Best 2012"/></center></a><br>
+           <a href="http://www.naopia.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/NAOPIALogo2.png"  class="awards" alt="NAOPIAL"/></center></a>
          </div>
          <div class="columns small-12 medium-3 large-3">
-           <a href="http://www.utahbusiness.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UB_UtahLegalElite.png"  class="awards" alt="Legal Elite" /></center></a><br>
-           <a href="http://www.utahbusiness.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UB_TopLawyers.png" class="awards" alt="Peers" /></center></a><br>
-           <a href="https://www.utahassociationforjustice.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UAforJ.png" class="awards" alt="UAFJ" /></center></a><br>
-           <a href="http://www.martindale.com/Mr-Charles-H-Thronson/2596500-lawyer.htm" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/AV.png" class="awards" alt="AV" style="width: 100px; "/></center></a>
+           <a href="http://www.utahbusiness.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UB_UtahLegalElite2.png"  class="awards" alt="Legal Elite" /></center></a><br>
+           <a href="http://www.utahbusiness.com/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UB_TopLawyers2.png" class="awards" alt="Peers" /></center></a><br>
+           <a href="https://www.utahassociationforjustice.org/" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/UAforJ2.png" class="awards" alt="UAFJ" /></center></a><br>
+           <a href="http://www.martindale.com/Mr-Charles-H-Thronson/2596500-lawyer.htm" target="_blank"><center><img src="http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/06/AV2.png" class="awards" alt="AV" style="width: 100px; "/></center></a>
          </div>
        </div>
      </div>
    </div>
-
  </section>
 
- <section class="row no-max collapse" style="background: #374a59; padding: 50px; margin: 0;">
-   <div class="pbl">
-     <h1 class="text-center">Meet Charles</h1>
-     <p class="text-center">
-       35 years of experience in personal injury and medical malpractice resulting in some of the largest verdicts and settlements in the Western United States
-     </p>
+ <section class="row no-max collapse" style="background: white; padding: 50px; margin: 0;">
+   <div class="row">
+     <div class="columns small-12 medium-6 large-6">
+       <div class="pbl">
+         <h1 class="text-center">Meet Charles</h1>
+         <p class="text-center">
+           35 years of experience in personal injury and medical malpractice resulting in some of the largest verdicts and settlements in the Western United States
+         </p>
+       </div>
+     </div>
+     <div class="columns small-12 medium-6 large-6">
+       <div class="pbl">
+         <h1 class="text-center">Parsons Behle & Latimer</h1>
+         <p class="text-center">
+         Since 1882 our success has been firmly rooted in our fundamental core values: client service; professional integrity; ethics and professionalism; collegiality; and community service.
+         </p>
+       </div>
+     </div>
    </div>
  </section>
-
-<section class="row no-max collapse" style="background: #9FACB5; padding: 50px; margin: 0;">
-  <div class="pbl">
-    <h1 class="text-center">Parsons Behle & Latimer</h1>
-    <p class="text-center">
-    Since 1882 our success has been firmly rooted in our fundamental core values: client service; professional integrity; ethics and professionalism; collegiality; and community service.
-    </p>
-  </div>
-</section>
-
 
 
 <?php
