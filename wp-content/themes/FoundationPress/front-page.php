@@ -104,8 +104,8 @@
    </div>
  </section>
 
- <section class="row no-max collapse" style="background: white; padding: 50px; margin: 0;">
-   <div class="columns small-12 medium-6 large-6">
+ <section class="row no-max" style="background: white; padding: 50px; margin: 0;">
+   <div class="columns small-12 medium-12 large-6">
      <div class="pbl">
        <h1 class="text-center">Meet Charles</h1>
        <p class="text-center">
@@ -113,7 +113,7 @@
        </p>
      </div>
    </div>
-   <div class="columns small-12 medium-6 large-6">
+   <div class="columns small-12 medium-12 large-6">
      <div class="pbl">
        <h1 class="text-center">Parsons Behle & Latimer</h1>
        <p class="text-center">
