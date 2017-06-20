@@ -107,9 +107,9 @@
  <section class="row no-max" style="background: white; padding: 50px; margin: 0;">
    <div class="columns small-12 medium-12 large-6">
      <div class="pbl">
-       <a class="text-center" href="http://www.medicalmalpracticeattorneyinfo.com/about/"><h1 class="text-center">Meet Charles</h1></a>
+       <a class="text-center" href="http://www.medicalmalpracticeattorneyinfo.com/about/"><h1 class="text-center">About Charles Thronson</h1></a>
        <p class="text-center">
-         35 years of experience in personal injury and medical malpractice resulting in some of the largest verdicts and settlements in the Western United States
+         35 years of experience in personal injury and medical malpractice resulting in some of the largest verdicts and settlements in the Western United States.
        </p>
      </div>
    </div>
