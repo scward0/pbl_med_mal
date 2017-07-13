@@ -39,7 +39,7 @@
 
       </div>
       <div id="form" class="columns small-12 medium-12 large-4">
-          <?php the_field('ninja'); ?>
+            <?php echo do_shortcode('[gravityform id="1" title="true" description="false" ajax="true"]') ?>
       </div>
     </div>
   </div>
