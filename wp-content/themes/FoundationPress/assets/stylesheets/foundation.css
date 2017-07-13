@@ -7872,6 +7872,17 @@ body {
   color: #3e3e3f;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
 
+#form {
+  background: #cad1d6 !important;
+  padding: 2%;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: Arial !important;
+  margin-bottom: 50px !important; }
+
+label[for="input_1_5"] {
+  display: none !important; }
+
 .nf-form-title h3, .gform_title {
   color: white !important;
   font-size: 28px !important;
