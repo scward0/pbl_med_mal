@@ -1,16 +1,16 @@
 
 <div class="collapse" style="padding: 0;">
   <div class="slick desk-slick hide-for-small-only">
-    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; ">
+    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-attachment: scroll; ">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-attachment: scroll;">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_2.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-attachment: scroll;">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
-    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;">
+    <div style="background: url('http://www.medicalmalpracticeattorneyinfo.com/wp-content/uploads/2017/01/MedMal_HeaderArtboard_1_copy_3-1.jpg'); height: 100%; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; overflow: hidden; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-attachment: scroll;">
       <img style="display: none; height:100vh !important; width: 100%; overflow: scroll !important; -webkit-overflow-scrolling: touch !important;" alt="slick hidden" />
     </div>
   </div>
