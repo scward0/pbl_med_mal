@@ -19,7 +19,7 @@
     <div class="row">
       <div class="columns small-12 medium-12 large-12" id="about">
         <h3 class="text-center secondary-title">Thank you for your submission</h3>
-        <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 20px; margin-top: 50px;">
+        <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 20px; margin-top: 50px; text-align: center;">
           Your case information is very valuable to us, we will contact you regarding your case as soon as we can.
         </p>
       </div>
