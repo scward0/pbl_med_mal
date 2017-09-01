@@ -35,6 +35,8 @@
 		  ga('create', 'UA-35693720-4', 'auto');
 		  ga('send', 'pageview');
 		</script>
+		<script type="text/javascript"> new Image().src = '//clickserv.basis.net/conv/e736a4dab24c153a';
+		</script>
 		<?php wp_head(); ?>
 	</head>
 
