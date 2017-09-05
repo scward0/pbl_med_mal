@@ -18,38 +18,21 @@
 		<link rel="stylesheet" type="text/css" href="http://www.medicalmalpracticeattorneyinfo.com/wp-content/themes/FoundationPress/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="http://www.medicalmalpracticeattorneyinfo.com/wp-content/themes/FoundationPress/slick/slick-theme.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		<!-- Google Tag Manager -->
+		<script type="text/javascript"> new Image().src = '//clickserv.basis.net/conv/e736a4dab24c153a'; </script>
 		<script>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-WKNNVRS');</script>
-		<!-- End Google Tag Manager -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-35693720-4', 'auto');
-		  ga('send', 'pageview');
-		</script>
-		<script type="text/javascript"> new Image().src = '//clickserv.basis.net/conv/e736a4dab24c153a';
+		ga('create', 'UA-35693720-4', 'auto');
+		ga('send', 'pageview');
+
 		</script>
 		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?>>
-
-		<!-- Google Tag Manager (noscript) -->
-
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-
-WKNNVRS"
-
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 	<?php do_action( 'foundationpress_after_body' ); ?>
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
