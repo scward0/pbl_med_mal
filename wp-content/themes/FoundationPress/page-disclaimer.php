@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+
 
 <div class="row" class="collapse hide-for-small-only" style="max-width: none;">
   <div>

@@ -116,9 +116,6 @@ class GFCommon {
 				$currency = GFCommon::get_currency();
 			}
 
-			if ( false === class_exists( 'RGCurrency' ) ) {
-				require_once( GFCommon::get_base_path() . '/currency.php' );
-			}
 			$currency = new RGCurrency( $currency );
 			$number   = $currency->to_money( $number );
 		} else {
@@ -228,10 +225,6 @@ class GFCommon {
 		} else if ( $number_format == 'decimal_comma' ) {
 			$decimal_char = ',';
 		} else if ( $number_format == 'currency' ) {
-			if ( ! class_exists( 'RGCurrency' ) ) {
-				require_once( self::get_base_path() . '/currency.php' );
-			}
-
 			$currency     = RGCurrency::get_currency( GFCommon::get_currency() );
 			$decimal_char = $currency['decimal_separator'];
 		}
@@ -1019,7 +1012,20 @@ class GFCommon {
 
 		// Entry URL.
 		$entry_url = get_bloginfo( 'wpurl' ) . '/wp-admin/admin.php?page=gf_entries&view=entry&id=' . rgar( $form, 'id' ) . '&lid=' . rgar( $lead, 'id' );
-		$text      = str_replace( '{entry_url}', $url_encode ? urlencode( $entry_url ) : $entry_url, $text );
+
+		/**
+		 * Filter the entry URL
+		 *
+		 * Allows for the filtering of the entry_url placeholder to handle situation in which the wpurl might not agree with the admin_url.
+		 *
+		 * @since 2.2.3.14
+		 *
+		 * @param string $entry_url The Entry URL to filter.
+		 * @param array  $form      The current Form object.
+		 * @param array  $lead      The current Entry object.
+		 */
+		$entry_url      = esc_url( apply_filters( 'gform_entry_detail_url', $entry_url, $form, $lead ) );
+		$text           = str_replace( '{entry_url}', $url_encode ? urlencode( $entry_url ) : $entry_url, $text );
 
 		// Post ID.
 		$text = str_replace( '{post_id}', $url_encode ? urlencode( rgar( $lead, 'post_id' ) ) : rgar( $lead, 'post_id' ), $text );
@@ -1322,6 +1328,9 @@ class GFCommon {
 					$field_value = self::encode_shortcodes( $field_value );
 
 					$field_value = apply_filters( 'gform_merge_tag_filter', $field_value, $merge_tag, $options, $field, $raw_field_value );
+
+					// Clear merge tag modifiers from the field object.
+					$field->set_modifiers( array() );
 
 					if ( $field_value === false ) {
 						continue;
@@ -1749,9 +1758,15 @@ class GFCommon {
 		$bcc       = GFCommon::replace_variables( rgar( $notification, 'bcc' ), $form, $lead, false, false, true, 'html', $data );
 		$replyTo   = GFCommon::replace_variables( rgar( $notification, 'replyTo' ), $form, $lead, false, false, true, 'html', $data );
 
-		$message_format = rgempty( 'message_format', $notification ) ? 'html' : rgar( $notification, 'message_format' );
+		// Default to multipart to improve Spam Assassin score.
+		//$message_format = rgar( $notification, 'message_format', 'multipart' );
 
-		$message = GFCommon::replace_variables( rgar( $notification, 'message' ), $form, $lead, false, false, ! rgar( $notification, 'disableAutoformat' ), $message_format, $data );
+		// Default to html to prevent issues with mail clients.
+		$message_format = rgar( $notification, 'message_format', 'html' );
+
+		$merge_tag_format = $message_format === 'multipart' ? 'html' : $message_format;
+
+		$message = GFCommon::replace_variables( rgar( $notification, 'message' ), $form, $lead, false, false, ! rgar( $notification, 'disableAutoformat' ), $merge_tag_format, $data );
 
 		if ( apply_filters( 'gform_enable_shortcode_notification_message', true, $form, $lead ) ) {
 			$message = do_shortcode( $message );
@@ -1765,8 +1780,7 @@ class GFCommon {
 			$attachments = array();
 		}
 
-		// For HTML messages, send them as multi-part to improve Spam Assassin score.
-		if ( $message_format === 'html' ) {
+		if ( $message_format === 'multipart' ) {
 
 			// Creating alternate text message.
 			$text_message = GFCommon::replace_variables( rgar( $notification, 'message' ), $form, $lead, false, false, ! rgar( $notification, 'disableAutoformat' ), 'text', $data );
@@ -1777,9 +1791,6 @@ class GFCommon {
 
 			// Formatting text message. Removes all tags.
 			$text_message = self::format_text_message( $text_message );
-
-			// Sets message format to multipart
-			$message_format = 'multipart';
 
 			// Sends text and html messages to send_email()
 			$message = array(
@@ -1908,8 +1919,8 @@ class GFCommon {
 
 		global $phpmailer;
 
-		$to    = str_replace( ' ', '', $to );
-		$bcc   = str_replace( ' ', '', $bcc );
+		$to  = str_replace( ' ', '', $to );
+		$bcc = str_replace( ' ', '', $bcc );
 
 		if ( ! GFCommon::is_valid_email( $from ) ) {
 			$from = get_bloginfo( 'admin_email' );
@@ -1939,13 +1950,14 @@ class GFCommon {
 				break;
 
 			case 'multipart' :
-				$boundary = self::$email_boundary;
+				$boundary     = self::$email_boundary;
 				$content_type = "multipart/alternative; boundary={$boundary}";
 
 				break;
 
 			default :
-				$error = new WP_Error( 'invalid_message_format', "Cannot send email because the message format ({$message_format}) is invalid." );
+				//When content type is unknown, default to HTML
+				$content_type = 'text/html';
 
 				break;
 		}
@@ -1969,15 +1981,24 @@ class GFCommon {
 			return;
 		}
 
-		// Formats email TO field to improve Spam Assassin score
-		$to = self::format_email_to( $to );
+		/**
+		 * Allows for formatting of the TO email address to improve spam score.
+		 *
+		 * @param bool enabled Value being filtered. Return true to format email TO, or false to leave email TO as is. Defaults to false.
+		 *
+		 * @since 2.2.0.3
+		 */
+		if ( apply_filters( 'gform_format_email_to', false ) ) {
+			// Formats email TO field to improve Spam Assassin score
+			$to = self::format_email_to( $to );
+		}
 
 		$message = self::format_email_message( $message, $message_format, $subject );
 
 		$name = empty( $from_name ) ? $from : $from_name;
 
 		$headers         = array();
-		$headers['From'] = 'From: "' . wp_strip_all_tags( $name, true ) . ' <' . $from . '>';
+		$headers['From'] = 'From: "' . wp_strip_all_tags( $name, true ) . '" <' . $from . '>';
 
 		if ( GFCommon::is_valid_email_list( $reply_to ) ) {
 			$headers['Reply-To'] = "Reply-To: {$reply_to}";
@@ -1990,7 +2011,21 @@ class GFCommon {
 		$headers['Content-type'] = "Content-type: {$content_type}; charset=" . get_option( 'blog_charset' );
 
 		$abort_email = false;
-		extract( apply_filters( 'gform_pre_send_email', compact( 'to', 'subject', 'message', 'headers', 'attachments', 'abort_email' ), $message_format, $notification ) );
+
+		/**
+		 * Modify the email before a notification has been sent.
+		 * You may also use this to prevent an email from being sent.
+		 *
+		 * @since 2.2.3.8  Added $entry parameter.
+		 * @since 1.9.15.6 Added $notification parameter.
+		 * @since Unknown
+		 *
+		 * @param array  $email          An array containing the email to address, subject, message, headers, attachments and abort email flag.
+		 * @param string $message_format The message format: html or text.
+		 * @param array  $notification   The current Notification object.
+		 * @param array  $entry          The current Entry object.
+		 */
+		extract( apply_filters( 'gform_pre_send_email', compact( 'to', 'subject', 'message', 'headers', 'attachments', 'abort_email' ), $message_format, $notification, $entry ) );
 
 		$is_success = false;
 		if ( ! $abort_email ) {
@@ -2075,12 +2110,13 @@ class GFCommon {
 
 	/**
 	 * Sets the character set email header.
+	 *
 	 * This is a target of the wp_mail_charset filter and is needed to get around a WordPress bug
 	 * that ignores the charset attribute if added to the $headers parameter of wp_mail().
 	 *
 	 * @since 2.2
 	 *
-	 * @param $charset Character set to be filtered
+	 * @param string $charset Character set to be filtered.
 	 *
 	 * @return string
 	 */
@@ -2114,7 +2150,7 @@ class GFCommon {
 
 			// Formatting To to improve Spam Assassin score
 			if ( strpos( $email, '<' ) === false ) {
-				$email_list[] = "{$email} <$email>";
+				$email_list[] = "\"{$email}\" <$email>";
 			}
 		}
 
@@ -2153,7 +2189,7 @@ class GFCommon {
 
 				$html_message = self::format_html_message( $message['html'], $subject );
 				$text_message = $message['text'];
-				$boundary = self::$email_boundary;
+				$boundary     = self::$email_boundary;
 
 				// Formatting multipart message
 				$message = "--{$boundary}
@@ -2320,6 +2356,14 @@ Content-Type: text/html;
 		return in_array( $field_type, $product_fields );
 	}
 
+	/**
+	 * Returns all the plugin capabilities.
+	 *
+	 * @since 2.2.1.12 Added gravityforms_system_status.
+	 * @since unknown
+	 *
+	 * @return array
+	 */
 	public static function all_caps() {
 		return array(
 			'gravityforms_edit_forms',
@@ -2337,6 +2381,7 @@ Content-Type: text/html;
 			'gravityforms_view_updates',
 			'gravityforms_view_addons',
 			'gravityforms_preview_forms',
+			'gravityforms_system_status',
 		);
 	}
 
@@ -2469,7 +2514,12 @@ Content-Type: text/html;
 				$slug = str_replace( '.php', '', $key );
 			}
 
-			$plugins[] = array( 'name' => $plugin['Name'], 'slug' => $slug, 'version' => $plugin['Version'], 'is_active' => $is_active );
+			$plugins[] = array(
+				'name' => str_replace( 'phpinfo()', 'PHP Info', $plugin['Name'] ),
+				'slug' => $slug,
+				'version' => $plugin['Version'],
+				'is_active' => $is_active,
+			);
 		}
 		$plugins = json_encode( $plugins );
 
@@ -2594,15 +2644,15 @@ Content-Type: text/html;
 	public static function post_to_manager( $file, $query, $options ) {
 
 		$request_url = GRAVITY_MANAGER_URL . '/' . $file . '?' . $query;
-		self::log_debug( 'Posting to manager: ' . $request_url );
+		self::log_debug( __METHOD__ . '(): endpoint: ' . $request_url );
 		$raw_response = wp_remote_post( $request_url, $options );
-		self::log_debug( print_r( $raw_response, true ) );
+		self::log_remote_response( $raw_response );
 
 		if ( is_wp_error( $raw_response ) || 200 != $raw_response['response']['code'] ) {
-			self::log_error( 'Error from manager. Sending to proxy...' );
+			self::log_error( __METHOD__ . '(): Error from manager. Sending to proxy...' );
 			$request_url  = GRAVITY_MANAGER_PROXY_URL . '/proxy.php?f=' . $file . '&' . $query;
 			$raw_response = wp_remote_post( $request_url, $options );
-			self::log_debug( print_r( $raw_response, true ) );
+			self::log_remote_response( $raw_response );
 		}
 
 		return $raw_response;
@@ -3293,10 +3343,6 @@ Content-Type: text/html;
 	}
 
 	public static function to_money( $number, $currency_code = '' ) {
-		if ( ! class_exists( 'RGCurrency' ) ) {
-			require_once( 'currency.php' );
-		}
-
 		if ( empty( $currency_code ) ) {
 			$currency_code = self::get_currency();
 		}
@@ -3307,15 +3353,9 @@ Content-Type: text/html;
 	}
 
 	public static function to_number( $text, $currency_code = '' ) {
-		if ( ! class_exists( 'RGCurrency' ) ) {
-			require_once( 'currency.php' );
-		}
-
-
 		if ( empty( $currency_code ) ) {
 			$currency_code = self::get_currency();
 		}
-
 
 		$currency = new RGCurrency( $currency_code );
 
@@ -3625,7 +3665,7 @@ Content-Type: text/html;
 
 		$fields = self::get_akismet_fields( $form, $lead );
 
-		//Submitting info to Akismet
+		// Submitting info to Akismet
 		if ( defined( 'AKISMET_VERSION' ) && AKISMET_VERSION < 3.0 ) {
 			//Akismet versions before 3.0
 			$response = akismet_http_post( $fields, $akismet_api_host, '/1.1/comment-check', $akismet_api_port );
@@ -3644,7 +3684,7 @@ Content-Type: text/html;
 		$fields = self::get_akismet_fields( $form, $lead );
 		$as     = $is_spam ? 'spam' : 'ham';
 
-		//Submitting info to Akismet
+		// Submitting info to Akismet
 		if ( defined( 'AKISMET_VERSION' ) && AKISMET_VERSION < 3.0 ) {
 			//Akismet versions before 3.0
 			akismet_http_post( $fields, $akismet_api_host, '/1.1/submit-' . $as, $akismet_api_port );
@@ -3659,7 +3699,7 @@ Content-Type: text/html;
 		$is_entry_detail = GFCommon::is_entry_detail();
 		$is_admin        = $is_form_editor || $is_entry_detail;
 
-		//Gathering Akismet information
+		// Gathering Akismet information
 		$akismet_info                         = array();
 		$akismet_info['comment_type']         = 'gravity_form';
 		$akismet_info['comment_author']       = self::get_akismet_field( 'name', $form, $lead );
@@ -3828,7 +3868,7 @@ Content-Type: text/html;
 				'name'     => 'MasterCard',
 				'slug'     => 'mastercard',
 				'lengths'  => '16',
-				'prefixes' => '51,52,53,54,55',
+				'prefixes' => '51,52,53,54,55,22,23,24,25,26,270,271,272',
 				'checksum' => true,
 			),
 			array(
@@ -3954,9 +3994,12 @@ Content-Type: text/html;
 	 *
 	 * @return bool If the logging plugin is active.
 	 */
-	public static function is_logging_plugin_active(){
+	public static function is_logging_plugin_active() {
+		if ( ! function_exists( 'is_plugin_active' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
 
-		//In some scenarios, is_plugin_active() will return true when plugin file has been manually deleted.
+		// In some scenarios, is_plugin_active() will return true when plugin file has been manually deleted.
 		return is_plugin_active( 'gravityformslogging/logging.php' ) && file_exists( trailingslashit( WP_PLUGIN_DIR ) . 'gravityformslogging/logging.php' );
 
 	}
@@ -3973,7 +4016,7 @@ Content-Type: text/html;
 
 		$display_all = $field->displayAllCategories;
 
-		$args = array( 'hide_empty' => false, 'orderby' => 'name' );
+		$args = array( 'hide_empty' => false, 'orderby' => 'name', 'taxonomy' => 'category' );
 
 		if ( ! $display_all ) {
 			foreach ( $field->choices as $field_choice_to_include ) {
@@ -3982,7 +4025,7 @@ Content-Type: text/html;
 		}
 
 		$args  = gf_apply_filters( array( 'gform_post_category_args', $field->id ), $args, $field );
-		$terms = get_terms( 'category', $args );
+		$terms = get_terms( $args['taxonomy'], $args );
 
 		$terms_copy = unserialize( serialize( $terms ) ); // deep copy the terms to avoid repeating GFCategoryWalker on previously cached terms.
 		$walker     = new GFCategoryWalker();
@@ -4026,10 +4069,10 @@ Content-Type: text/html;
 		$form_id = $is_admin ? rgget( 'id' ) : $field->formId;
 
 		/**
-		 * Allows you to filter (modify) the post category choices when using post fields
+		 * Allows you to filter (modify) the post category choices when using post fields.
 		 *
-		 * @param array $field   The Cateogry choices field
-		 * @param int   $form_id The CUrrent form ID
+		 * @param GF_Field $field   The category choices field.
+		 * @param int      $form_id The current form ID.
 		 */
 		$field->choices = gf_apply_filters( array(
 			'gform_post_category_choices',
@@ -4101,9 +4144,6 @@ Content-Type: text/html;
 		$number_format = $field->numberFormat;
 
 		if ( empty( $number_format ) ) {
-			if ( ! class_exists( 'RGCurrency' ) ) {
-				require_once( GFCommon::get_base_path() . '/currency.php' );
-			}
 			$currency      = RGCurrency::get_currency( rgar( $lead, 'currency' ) );
 			$number_format = self::is_currency_decimal_dot( $currency ) ? 'decimal_dot' : 'decimal_comma';
 		}
@@ -4136,6 +4176,11 @@ Content-Type: text/html;
 		}
 
 		$result = apply_filters( 'gform_calculation_result', $result, $formula, $field, $form, $lead );
+
+		if ( ! $result || ! is_numeric( $result ) || is_nan( $result ) ) {
+			GFCommon::log_debug( __METHOD__ . '(): No result or non-numeric result. Returning zero instead.' );
+			$result = 0;
+		}
 
 		return $result;
 	}
@@ -4242,6 +4287,21 @@ Content-Type: text/html;
 		}
 	}
 
+	/**
+	 * Log the remote request response.
+	 *
+	 * @since 2.2.2.1
+	 *
+	 * @param WP_Error|array $response The remote request response or WP_Error on failure.
+	 */
+	public static function log_remote_response( $response ) {
+		if ( is_wp_error( $response ) || isset( $_GET['gform_debug'] ) ) {
+			self::log_error( __METHOD__ . '(): ' . print_r( $response, 1 ) );
+		} else {
+			self::log_debug( sprintf( '%s(): code: %s; body: %s', __METHOD__, wp_remote_retrieve_response_code( $response ), wp_remote_retrieve_body( $response ) ) );
+		}
+	}
+
 	public static function echo_if( $condition, $text ) {
 		_deprecated_function( 'GFCommon::echo_if() is deprecated', '1.9.9', 'Use checked() or selected() instead.' );
 
@@ -4257,9 +4317,6 @@ Content-Type: text/html;
 	}
 
 	public static function gf_global( $echo = true ) {
-
-		require_once( GFCommon::get_base_path() . '/currency.php' );
-
 		$gf_global                       = array();
 		$gf_global['gf_currency_config'] = RGCurrency::get_currency( GFCommon::get_currency() );
 		$gf_global['base_url']           = GFCommon::get_base_url();
@@ -4276,10 +4333,6 @@ Content-Type: text/html;
 	}
 
 	public static function gf_vars( $echo = true ) {
-		if ( ! class_exists( 'RGCurrency' ) ) {
-			require_once( 'currency.php' );
-		}
-
 		$gf_vars                            = array();
 		$gf_vars['active']                  = esc_attr__( 'Active', 'gravityforms' );
 		$gf_vars['inactive']                = esc_attr__( 'Inactive', 'gravityforms' );
@@ -4325,7 +4378,7 @@ Content-Type: text/html;
 		$gf_vars['confirmationInvalidPageSelection'] = __( 'Please select a page.', 'gravityforms' );
 		$gf_vars['confirmationInvalidRedirect']      = __( 'Please enter a URL.', 'gravityforms' );
 		$gf_vars['confirmationInvalidName']          = __( 'Please enter a confirmation name.', 'gravityforms' );
-		$gf_vars['confirmationDeleteField']          = __( "Warning! Deleting this field will also delete all entry data associated with it. 'Cancel' to stop. 'OK' to delete", 'gravityforms' );
+		$gf_vars['confirmationDeleteField']          = __( "Warning! Deleting this field will also delete all entry data associated with it. 'Cancel' to stop. 'OK' to delete.", 'gravityforms' );
 
 		$gf_vars['conditionalLogicDependency']           = __( "Warning! This form contains conditional logic dependent upon this field. Deleting this field will deactivate those conditional logic rules and also delete all entry data associated with the field. 'OK' to delete, 'Cancel' to abort.", 'gravityforms' );
 		$gf_vars['conditionalLogicDependencyChoice']     = __( "This form contains conditional logic dependent upon this choice. Are you sure you want to delete this choice? 'OK' to delete, 'Cancel' to abort.", 'gravityforms' );
@@ -4345,8 +4398,8 @@ Content-Type: text/html;
 		$gf_vars['removeFieldFilter'] = esc_html__( 'Remove a condition', 'gravityforms' );
 		$gf_vars['filterAndAny']      = esc_html__( 'Include results if {0} match:', 'gravityforms' );
 
-		$gf_vars['customChoices'] = esc_html__( 'Custom Choices', 'gravityforms' );
-
+		$gf_vars['customChoices']     = esc_html__( 'Custom Choices', 'gravityforms' );
+		$gf_vars['predefinedChoices'] = esc_html__( 'Predefined Choices', 'gravityforms' );
 
 		if ( is_admin() && rgget( 'id' ) ) {
 
@@ -5304,6 +5357,9 @@ Content-Type: text/html;
 			$value = '';
 		}
 
+		// Clear merge tag modifiers from the field object.
+		$field->set_modifiers( array() );
+
 		if ( $match[0][0] != '{' ) {
 			// Replace the merge tag in the conditional shortcode merge_tag attr.
 			$value = str_replace( $match[1], $value, $match[0] );
@@ -5486,23 +5542,38 @@ Content-Type: text/html;
 	}
 
 	/**
-	 * @param $message
-	 * @param $subject
+	 * Maybe wrap the notification message in html tags.
+	 *
+	 * @since 2.2.0
+	 *
+	 * @param string $message The notification message. Merge tags have already been processed.
+	 * @param string $subject The notification subject line. Merge tags have already been processed.
 	 *
 	 * @return string
 	 */
 	private static function format_html_message( $message, $subject ) {
 		if ( ! preg_match( '/<html/i', $message ) ) {
-			$message =
+			$template =
 				"<html>
 	<head>
-		<title>{$subject}</title>
+		<title>{subject}</title>
 	</head>
 	<body>
-		{$message}
+		{message}
 	</body>
 </html>";
 
+			/**
+			 * Allow the template for the html formatted message to be overridden.
+			 *
+			 * @since 2.2.1.5
+			 *
+			 * @param string $template The template for the html formatted message. Use {message} and {subject} as placeholders.
+			 */
+			$template = apply_filters( 'gform_html_message_template_pre_send_email', $template );
+
+			$message = str_replace( '{message}', $message, $template );
+			$message = str_replace( '{subject}', $subject, $message );
 		}
 
 		return $message;

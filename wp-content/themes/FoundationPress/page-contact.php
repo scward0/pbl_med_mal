@@ -14,17 +14,18 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-
   <div class="container white">
-    <div class="row">
-      <div class="columns small-12 medium-12 large-8" id="about">
-        <h3 class="text-center secondary-title"><?php the_title(); ?></h3>
-        <?php the_field('content'); ?>
-        <br>
-        <?php the_field('map'); ?>
+    <!-- <div class="row">
+      <h3 class="text-center secondary-title"><?php the_title(); ?></h3>
+    </div> -->
+    <div class="row" style="padding-top: 50px;">
+      <div id="form" class="columns small-12 medium-12 large-8">
+        <?php echo do_shortcode('[gravityform id="1" title="true" description="false" ajax="true"]') ?>
       </div>
-      <div id="form" class="columns small-12 medium-12 large-4">
-            <?php echo do_shortcode('[gravityform id="1" title="true" description="false" ajax="true"]') ?>
+      <div class="columns small-12 medium-12 large-4" id="about" style="padding: 20px;">
+        <?php the_field('content'); ?>
+        <br />
+        <?php the_field('map'); ?>
       </div>
     </div>
   </div>
