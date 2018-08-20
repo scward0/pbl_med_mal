@@ -24,7 +24,7 @@ class AioFaviconFrontend {
    * @param array $aioFaviconSettings user settings
    */
   //public static function AioFaviconFrontend($aioFaviconSettings) {
-  function AioFaviconFrontend($aioFaviconSettings) {
+  function __construct($aioFaviconSettings) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;
     $this->faviconRenderHelper = new FaviconRenderHelper($this->aioFaviconSettings,AIOFAVICON_FRONTEND);

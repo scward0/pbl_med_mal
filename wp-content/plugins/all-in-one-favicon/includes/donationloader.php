@@ -30,7 +30,7 @@ class AIOFaviconDonationLoader {
    *
    * @return void
    */
-  function AIOFaviconDonationLoader() {
+  function __construct() {
     //not logged in users can trigger the action
     //add_action( 'wp_ajax_nopriv_action', 'methodName' );
     //only logged in users can trigger the action

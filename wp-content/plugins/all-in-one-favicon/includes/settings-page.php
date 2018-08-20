@@ -31,7 +31,7 @@
     <h1><?php echo AIOFAVICON_NAME . ' ' . __('Settings', AIOFAVICON_TEXTDOMAIN); ?></h1>
     <br class="clear"/>
 
-    <div class="updated" id="javascriptWarning" style="background-color:#f66;">
+    <div class="updated" id="javascriptWarning" style="background-color:#f66;display:none;">
       <p><?php _e("Please enable JavaScript. Upload-functionality on this page relies on JavaScript and will not work if it's not enabled.", AIOFAVICON_TEXTDOMAIN) ?></p>
     </div>
 

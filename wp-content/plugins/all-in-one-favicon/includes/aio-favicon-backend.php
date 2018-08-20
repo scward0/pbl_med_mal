@@ -30,7 +30,7 @@ class AioFaviconBackend {
    * @return void
    */
   //public static function AioFaviconBackend($aioFaviconSettings) {
-  function AioFaviconBackend($aioFaviconSettings, $aioFaviconDefaultSettings, $donationLoader,
+  function __construct($aioFaviconSettings, $aioFaviconDefaultSettings, $donationLoader,
                               $faviconFrontendMap, $faviconBackendMap) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;

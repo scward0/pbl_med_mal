@@ -23,7 +23,7 @@ class FaviconRenderHelper {
    * @param String $aioFaviconType either 'frontend' or 'backend'
    */
   //public static function FaviconRenderHelper($aioFaviconSettings, $aioFaviconType) {
-  function FaviconRenderHelper($aioFaviconSettings, $aioFaviconType) {
+  function __construct($aioFaviconSettings, $aioFaviconType) {
 
     $this->aioFaviconSettings = $aioFaviconSettings;
     $this->aioFaviconType = $aioFaviconType;

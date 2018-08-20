@@ -1,10 +1,10 @@
 === XML Sitemap & Google News feeds ===
 Contributors: RavanH
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ravanhagen%40gmail%2ecom&item_name=XML%20Sitemap%20Feed
-Tags: sitemap, xml sitemap, news sitemap, sitemap.xml, robots.txt, Google, Google News, Yahoo, Bing, , Yandex, Baidu, seo, feed, Polylang, WPML, image sitemap
+Tags: sitemap, xml sitemap, news sitemap, sitemap.xml, robots.txt, Google, Google News, Yahoo, Bing, Yandex, Baidu, seo, feed, Polylang, WPML, image sitemap
 Requires at least: 3.2
-Tested up to: 4.7
-Stable tag: 4.7.5
+Tested up to: 4.9
+Stable tag: 4.9.4
 
 XML and Google News Sitemaps to feed the hungry spiders. Multisite, WP Super Cache, Polylang and WPML compatible.
 
@@ -26,13 +26,13 @@ Please read the FAQ's for info on how to get your articles listed on Google News
 
 1. If you _do not use fancy URL's_ or you have WordPress installed in a _subdirectory_, a dynamic **robots.txt will NOT be generated**. You'll have to create your own and upload it to your site root! See FAQ's.
 
-2. On large sites, it is advised to use a good caching plugin like **WP Super Cache**, **Quick Cache** or **W3 Total Cache** to improve your site _and_ sitemap performance.
+2. On large sites, it is advised to use a good caching plugin like **WP Super Cache**, **Quick Cache**, **W3 Total Cache** or another to improve your site _and_ sitemap performance.
 
 = Features =
 
 **XML Sitemap**
 
-* Sitemap Index with optional inclusion of sitemaps for post types, categories and tags.
+* Sitemap Index with optional inclusion of sitemaps for custom post types, categories and tags.
 * Sitemap with custom URLs optional.
 * Custom/static sitemaps can be added to the index.
 * Completely **automatic** post URL _priority_ and _change frequency_ calculation based on post age and comment and trackback activity.
@@ -48,27 +48,20 @@ Please read the FAQ's for info on how to get your articles listed on Google News
 * Optionally include Image tags with caption and title for featured images or attached images.
 * Options to: set a different News Publication Name, include custom post types or limit inclusion to certain post categories.
 * Configure <access>, <genres> and <keywords> tags both globally and post by post
-* Pings Google on new publications.
+* Pings both Google and Bing on new publications.
 
 **More**
 
 * Compatible with multi-lingual sites using **Polylang** or **WPML** to allow all languages to be indexed equally.
-* Option to add new robots.txt rules. These can be used to further control (read: limit) the indexation of various parts of your site and subsequent spread of pagerank accross your sites pages.
+* Option to add new robots.txt rules. These can be used to further control (read: limit) the indexation of various parts of your site and subsequent spread of pagerank across your sites pages.
 * Includes XLS stylesheets for human readable sitemaps.
 
-= Translations =
+= Contribute =
 
-- **Dutch** * R.A. van Hagen http://status301.net (version 4.4)
-- **French** * R.A. van Hagen http://status301.net (version 4.2) (improved translation or suggestions needed!)
-- **Indonesian** * Nasrulhaq Muiz http://al-badar.net/ (version 4.2)
-- **Italian** * Raffaello Tesi http://www.raffaellotesi.com  (version 4.3.2)
-- **Japanese** * gblsm https://profiles.wordpress.org/gblsm/ (version 4.6)
-- **Serbian** * WPdiscounts http://wpdiscounts.com/ (version 4.1)
-- **Simplified Chinese** - 漠伦 https://molun.net (version 4.7.4)
-- **Spanish** * Andrew Kurtis - WebHostingHub Support http://www.webhostinghub.com/ (version 4.3.2)
-- **Ukrainian** * Cmd Software http://www.cmd-soft.com/ (version 4.0)
+If you're happy with this plugin as it is, please consider writing a quick [rating](https://wordpress.org/support/plugin/xml-sitemap-feed/reviews/#new-post) or helping other users out on the [support forum](https://wordpress.org/support/plugin/xml-sitemap-feed).
 
-New transtations will be accepted and listed here. See translation instructions under [Other Notes](http://wordpress.org/plugins/xml-sitemap-feed/other_notes/).
+If you wish to help build this plugin, you're very welcome to [translate it into your language](https://translate.wordpress.org/projects/wp-plugins/xml-sitemap-feed/) or contribute code on [Github](https://github.com/RavanH/xml-sitemap-feed/).
+
 
 = Credits =
 
@@ -270,23 +263,6 @@ Read more on [Increasing memory allocated to PHP](http://codex.wordpress.org/Edi
 Yes. In fact, it has been designed for it. Tested on WPMU 2.9.2 and WPMS 3+ both with normal activation and with Network Activate / Site Wide Activate.
 
 
-== Translation ==
-
-1. Install PoEdit on your computer.
-1. Go to this plugins /languages/ directory.
-1. If there is no .po file that corresponds with your language yet, rename the template translation database xml-sitemap-feed-xx_XX.po by replacing the xx with your language code and XX with your country code.
-1. Open the .po file of your language with PoEdit.
-1. Go to Edit > Preferences and on the tab Editor check the option to compile a .mo database on save automatically. Close with OK.
-1. Go to Catalog > Settings and set your name, e-mail address, language and country. Close with OK.
-1. Go to Catalog > Update from POT-file and select the main xml-sitemap-feed.pot file. Then accept all new and removed translation strings with OK.
-1. Now go ahead and start translating all the texts listed in PoEdit.
-1. When done, go to File > Save to Save.
-1. Upload the automatically created xml-sitemap-feed-xx_XX.mo database file (where xx_XX should now be your language and country code) to the plugins /languages/ directory on your WordPress site.
-1. After verifying the translations work on your site, send the .mo file and, if you're willing to share it, your original .po file to ravanhagen@gmail.com and don't forget to tell me how and with what link you would like to be mentioned in the credits!
-
-Thanks for sharing your translation :)
-
-
 == Screenshots ==
 
 1. XML Sitemap feed viewed in a normal browser. For your eyes only ;)
@@ -295,10 +271,53 @@ Thanks for sharing your translation :)
 
 == Upgrade Notice ==
 
-= 4.7.5 =
-PHP7 compatibility, cache flush fix contributed by @e2robert, headers already sent detection.
+= 4.9.4 =
+Bugfixes: double content type filtering and missing featured images (thanks @flyerua)
+
 
 == Changelog ==
+
+= 4.9.4 =
+* FIX: missing featured images, thanks @flyerua 
+* FIX: double content type response header filtering
+
+= 4.9.3 =
+* Reinstate filter_no_news_limits, allowing post type array
+* Improved language handling and new language filter xmlsf_post_language
+* Force text/xml Content-Type response header
+
+= 4.9.2 =
+* FactCheck genre causes error in Search Console
+
+= 4.9.1 =
+* FIX: double genre terms on upgrade from 4.4,  thanks @mouhalves
+* FIX: wp_count_posts uncached and too heavy on large sites, thanks @carlalexander
+* Last-modified response header now linked to Update on comments setting
+* FIX: plugin_basename propagation
+
+= 4.9 =
+* Code cleanup
+* NEW: FactCheck genre
+* Changefreq tag dropped
+* NEW: translation strings for genres
+* FIX: zlib.output_compression compatibility, thanks @alicewondermiscreations
+* FIX: permalink issue with Woocommerce account page endpoints
+* FIX: undefined index in news post types
+
+= 4.8.3 =
+* fix get_lastpostdate array/string
+* restore pre PHP 5.4 compatibility (popular request)
+
+= 4.8 =
+* NEW: Conditional functions is_sitemap() and is_news()
+* code cleanup and annotation
+* new google ping URL
+* revisit get first/last date/modified functions and cache key set/delete
+* FIX: cache key missing timezone
+* FIX: wp_rewrite init before flush_rules
+
+= 4.7.6 =
+* FIX Open_BaseDir issue on IIS server
 
 = 4.7.5 =
 * FIX: On cache_flush purge also the respective time_key cache entry,
@@ -345,7 +364,7 @@ props @e2robert https://wordpress.org/support/topic/object-cache-issue-results-i
 * Set Google News access tag per post
 * Exclude posts from Google News sitemap
 * News Sitemap stylesheet text/links update
-* FIX: delete cached key as suggested by Jeremy Clarke https://wordpress.org/support/topic/please-stop-running-wp_cache_flush-whenever-posts-are-edited
+* FIX: cache_delete cached key instead of cache_flush as suggested by Jeremy Clarke https://wordpress.org/support/topic/please-stop-running-wp_cache_flush-whenever-posts-are-edited
 * NEW: Nginx Helper compatibility to purge cache sitemap URLs from FastCGI Cache or Redis
 
 = 4.4.1 =

@@ -10,7 +10,7 @@ if ( ! defined( 'WPINC' ) ) die;
 global $xmlsf;
 
 // start output
-echo $xmlsf->headers();
+echo $xmlsf->head();
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -34,7 +34,6 @@ if ( $terms ) :
 		<loc><?php echo get_term_link( $term ); ?></loc>
 	 	<priority><?php echo $xmlsf->get_priority('taxonomy',$term); ?></priority>
 		<?php echo $xmlsf->get_lastmod('taxonomy',$term); ?>
-		<changefreq><?php echo $xmlsf->get_changefreq('taxonomy',$term); ?></changefreq>
 	</url>
 <?php
     endforeach;

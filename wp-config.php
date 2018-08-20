@@ -32,7 +32,7 @@
 // /** MySQL database password */
 // define('DB_PASSWORD', 'root');
 
-
+define('FS_METHOD', 'direct');
 
 define('DB_NAME', 'pblmedicalmalpractice');
 
